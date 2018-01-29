@@ -4,8 +4,8 @@
   --color-secondary: #ae95da;
   --color-accent: #fff;
 
-  --font-primary: 'Oswald', sans-serif;
-  --font-secondary: 'Roboto', sans-serif;
+  --font-primary: "Oswald", sans-serif;
+  --font-secondary: "Roboto", sans-serif;
 }
 
 html {
