@@ -1,12 +1,28 @@
 :root {
   --color-primary: #021d49;
-  --color-primary-light: #aae8f2;
-  --color-secondary: #ae95da;
-  --color-accent: #fff;
-  --font-primary: "Oswald", sans-serif;
-  --font-secondary: "Roboto", sans-serif;
+  --color-primary-light: #b6c7dd;
+  --color-secondary: #bfbfbf;
+  --color-accent: #ad92cc;
+  --font-primary: "Roboto", sans-serif;
+  --font-secondary: "Oswald", sans-serif;
 }
 
 html {
   font-family: var(--font-primary);
+}
+
+h1, h2, h4, h5, blockquote, cite, strong, del, ins, b, u, s {
+  color: var(--color-primary);
+}
+
+h3, h6, a, em, ins, dfn, i, mark {
+  color: var(--color-primary-light);
+}
+
+ul, li, ol, dl, dt, dd {
+  color: var(--color-accent);
+}
+
+.btn {
+  border-radius: 25px;
 }
