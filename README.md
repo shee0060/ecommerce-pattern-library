@@ -1,5 +1,5 @@
 ---
-name: "Atlas Exploration"
+name: "Orion Exploration"
 fontUrl: "https://fonts.googleapis.com/css?family=Oswald:400,700|Roboto:300,400"
 fonts:
   primary:  |
@@ -19,4 +19,4 @@ colors:
     The accent colour is lavender. Use this colour on lists and for very small details.
 ---
 
-Atlas Explorations offers the vacation of your wildest dreams. Visit countless locations around our solar system on a space ship built for entertainment and relaxation. Stay on the ship and enjoy the views or participate in thrilling excursions like nothing you've seen before.
+Orion Explorations offers the vacation of your wildest dreams. Visit countless locations around our solar system on a space ship built for entertainment and relaxation. Stay on the ship and enjoy the views or participate in thrilling excursions like nothing you've seen before.

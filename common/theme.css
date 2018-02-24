@@ -22,7 +22,3 @@ h3, h6, a, em, ins, dfn, i, mark {
 ul, li, ol, dl, dt, dd {
   color: var(--color-accent);
 }
-
-.btn {
-  border-radius: 25px;
-}
