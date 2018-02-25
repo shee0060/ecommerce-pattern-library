@@ -1,0 +1,28 @@
+.hero-banner-dark {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.dark-text {
+  color: #fff;
+  background-color: var(--color-primary);
+}
+
+.hero-text-dark {
+  padding-top: 4em;
+  color: #fff;
+}
+
+.hero-banner-light {
+  background-color: #fff;
+  color: var(--color-primary);
+}
+
+.hero-text-light {
+  padding-top: 4em;
+  color: var(--color-primary);
+}
+
+.cards-banner-dark {
+  background-color: var(--color-primary);
+}
