@@ -13,13 +13,14 @@
   <link href="../buttons/buttons.css" rel="stylesheet">
 </head>
 <body>
-  <form>
+  <div novalidate>
     <label class="push-1-2" id="dob">Date of Birth</label>
     <input id="dob" type="date" required aria-desscribedby="dob-error">
     <p class="error-message milli island-1-4 push-0" id="dob-error">
       <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
       <span class="icon-label">Please provide a valid date of birth</span>
     </p>
-  </form>
+  </div>
+  <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
 </body>
 </html>

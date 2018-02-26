@@ -10,14 +10,12 @@
   color: #fff;
   background-color: var(--color-primary);
   box-shadow: 3px 3px 15px #000;
-  margin: 2em 5em 2em 5em;
 }
 
 .light-card {
   color: var(--color-primary);
   background-color: #fff;
   box-shadow: 3px 3px 15px #000;
-  margin: 2em 5em 2em 5em;
 }
 
 .light-card-white {

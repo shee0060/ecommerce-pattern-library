@@ -15,17 +15,16 @@ input {
   border-radius: 3px;
 }
 
-input:invalid {
+input[type="radio"] + label::before{
+  border: 2px solid var(--color-primary-light);
+}
+
+.is-validated input:invalid {
   border-color: var(--color-accent-dark);
 }
 
-input[type="radio"] {
+.is-validated input[type="radio"] {
   border-color: var(--color-primary);
-}
-
-input:focus,
-input[type="radio"] {
-  border-color: var(--color-primary-light);
 }
 
 .error-message {
@@ -39,8 +38,8 @@ input[type="radio"] {
   color: #fff;
 }
 
-.error-message:first-child,
-input:invalid + .error-message,
-input:invalid + label + .error-message {
+.is-validated > .error-message:first-child,
+.is-validated input:invalid + .error-message,
+.is-validated input:invalid + label + .error-message {
   display: block;
 }

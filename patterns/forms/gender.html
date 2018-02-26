@@ -13,7 +13,7 @@
   <link href="../buttons/buttons.css" rel="stylesheet">
 </head>
 <body>
-  <form>
+  <div novalidate>
     <label class="push-1-2" id="gender">Gender</label>
     <input id="gender" list="gender-list" required aria-desscribedby="dob-error">
     <p class="error-message milli island-1-4 push-0" id="dob-error">
@@ -25,6 +25,8 @@
       <option value="Female">
       <option value="Other">
     </datalist>
-  </form>
+  </div>
+
+  <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
 </body>
 </html>

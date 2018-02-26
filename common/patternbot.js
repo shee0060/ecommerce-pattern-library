@@ -348,9 +348,9 @@ const patternBotIncludes = function (manifest) {
 /** 
  * Patternbot library manifest
  * /Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library
- * @version 1519651166979
+ * @version 1519659114646
  */
-const patternManifest_1519651166979 = {
+const patternManifest_1519659114646 = {
   "commonInfo": {
     "modulifier": [
       "responsive",
@@ -565,7 +565,8 @@ const patternManifest_1519651166979 = {
       "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/banner",
       "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/buttons",
       "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards",
-      "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms"
+      "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms",
+      "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections"
     ],
     "pages": []
   },
@@ -575,20 +576,6 @@ const patternManifest_1519651166979 = {
       "namePretty": "Banner",
       "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/banner",
       "html": [
-        {
-          "name": "four-dark-cards-banner",
-          "namePretty": "Four dark cards banner",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/banner/four-dark-cards-banner.html",
-          "localPath": "patterns/banner/four-dark-cards-banner.html",
-          "readme": {}
-        },
-        {
-          "name": "four-light-cards-banner",
-          "namePretty": "Four light cards banner",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/banner/four-light-cards-banner.html",
-          "localPath": "patterns/banner/four-light-cards-banner.html",
-          "readme": {}
-        },
         {
           "name": "hero-banner-dark",
           "namePretty": "Hero banner dark",
@@ -601,55 +588,6 @@ const patternManifest_1519651166979 = {
           "namePretty": "Hero banner light",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/banner/hero-banner-light.html",
           "localPath": "patterns/banner/hero-banner-light.html",
-          "readme": {}
-        },
-        {
-          "name": "six-dark-cards-banner",
-          "namePretty": "Six dark cards banner",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/banner/six-dark-cards-banner.html",
-          "localPath": "patterns/banner/six-dark-cards-banner.html",
-          "readme": {}
-        },
-        {
-          "name": "six-light-cards-banner",
-          "namePretty": "Six light cards banner",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/banner/six-light-cards-banner.html",
-          "localPath": "patterns/banner/six-light-cards-banner.html",
-          "readme": {}
-        },
-        {
-          "name": "text-banner-dark",
-          "namePretty": "Text banner dark",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/banner/text-banner-dark.html",
-          "localPath": "patterns/banner/text-banner-dark.html",
-          "readme": {}
-        },
-        {
-          "name": "text-banner-light",
-          "namePretty": "Text banner light",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/banner/text-banner-light.html",
-          "localPath": "patterns/banner/text-banner-light.html",
-          "readme": {}
-        },
-        {
-          "name": "three-dark-cards-banner",
-          "namePretty": "Three dark cards banner",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/banner/three-dark-cards-banner.html",
-          "localPath": "patterns/banner/three-dark-cards-banner.html",
-          "readme": {}
-        },
-        {
-          "name": "three-light-cards-banner",
-          "namePretty": "Three light cards banner",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/banner/three-light-cards-banner.html",
-          "localPath": "patterns/banner/three-light-cards-banner.html",
-          "readme": {}
-        },
-        {
-          "name": "three-white-cards-banner-dark",
-          "namePretty": "Three white cards banner dark",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/banner/three-white-cards-banner-dark.html",
-          "localPath": "patterns/banner/three-white-cards-banner-dark.html",
           "readme": {}
         }
       ],
@@ -705,80 +643,47 @@ const patternManifest_1519651166979 = {
       "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards",
       "html": [
         {
-          "name": "four-cards-dark",
-          "namePretty": "Four cards dark",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards/four-cards-dark.html",
-          "localPath": "patterns/cards/four-cards-dark.html"
-        },
-        {
-          "name": "four-cards-light",
-          "namePretty": "Four cards light",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards/four-cards-light.html",
-          "localPath": "patterns/cards/four-cards-light.html"
-        },
-        {
           "name": "no-button",
           "namePretty": "No button",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards/no-button.html",
           "localPath": "patterns/cards/no-button.html",
-          "readme": {}
+          "readme": {
+            "width": 300
+          }
         },
         {
           "name": "single-card-dark",
           "namePretty": "Single card dark",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards/single-card-dark.html",
-          "localPath": "patterns/cards/single-card-dark.html"
+          "localPath": "patterns/cards/single-card-dark.html",
+          "readme": {
+            "width": 300
+          }
         },
         {
           "name": "single-card-light",
           "namePretty": "Single card light",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards/single-card-light.html",
-          "localPath": "patterns/cards/single-card-light.html"
+          "localPath": "patterns/cards/single-card-light.html",
+          "readme": {
+            "width": 300
+          }
         },
         {
           "name": "single-card-white",
           "namePretty": "Single card white",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards/single-card-white.html",
-          "localPath": "patterns/cards/single-card-white.html"
-        },
-        {
-          "name": "six-cards-dark",
-          "namePretty": "Six cards dark",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards/six-cards-dark.html",
-          "localPath": "patterns/cards/six-cards-dark.html",
-          "readme": {}
-        },
-        {
-          "name": "six-cards-light",
-          "namePretty": "Six cards light",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards/six-cards-light.html",
-          "localPath": "patterns/cards/six-cards-light.html",
-          "readme": {}
-        },
-        {
-          "name": "six-cards-white",
-          "namePretty": "Six cards white",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards/six-cards-white.html",
-          "localPath": "patterns/cards/six-cards-white.html",
-          "readme": {}
-        },
-        {
-          "name": "three-cards-dark",
-          "namePretty": "Three cards dark",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards/three-cards-dark.html",
-          "localPath": "patterns/cards/three-cards-dark.html"
-        },
-        {
-          "name": "three-cards-light",
-          "namePretty": "Three cards light",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards/three-cards-light.html",
-          "localPath": "patterns/cards/three-cards-light.html"
-        },
-        {
-          "name": "three-cards-white",
-          "namePretty": "Three cards white",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards/three-cards-white.html",
-          "localPath": "patterns/cards/three-cards-white.html"
+          "localPath": "patterns/cards/single-card-white.html",
+          "readme": {
+            "width": 300,
+            "background-color": "--color-primary",
+            "padding": "20px",
+            "backgroundColour": "#021d49",
+            "interfaceColours": {
+              "primary": 255,
+              "opposite": 0
+            }
+          }
         }
       ],
       "md": [
@@ -873,6 +778,46 @@ const patternManifest_1519651166979 = {
           "localPath": "patterns/forms/forms.css"
         }
       ]
+    },
+    {
+      "name": "sections",
+      "namePretty": "Sections",
+      "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections",
+      "html": [
+        {
+          "name": "card-dark",
+          "namePretty": "Card dark",
+          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections/card-dark.html",
+          "localPath": "patterns/sections/card-dark.html"
+        },
+        {
+          "name": "card-light",
+          "namePretty": "Card light",
+          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections/card-light.html",
+          "localPath": "patterns/sections/card-light.html"
+        },
+        {
+          "name": "text-dark",
+          "namePretty": "Text dark",
+          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections/text-dark.html",
+          "localPath": "patterns/sections/text-dark.html"
+        },
+        {
+          "name": "text-light",
+          "namePretty": "Text light",
+          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections/text-light.html",
+          "localPath": "patterns/sections/text-light.html"
+        }
+      ],
+      "md": [],
+      "css": [
+        {
+          "name": "sections",
+          "namePretty": "Sections",
+          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections/sections.css",
+          "localPath": "patterns/sections/sections.css"
+        }
+      ]
     }
   ],
   "config": {
@@ -895,5 +840,5 @@ const patternManifest_1519651166979 = {
   }
 };
 
-patternBotIncludes(patternManifest_1519651166979);
+patternBotIncludes(patternManifest_1519659114646);
 }());

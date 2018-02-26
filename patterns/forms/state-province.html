@@ -13,7 +13,7 @@
   <link href="../buttons/buttons.css" rel="stylesheet">
 </head>
 <body>
-  <form>
+  <div novalidate>
     <label class="push-1-2" id="state">State or Province</label>
     <input id="state" list="state-list" required aria-describedby="state-province-error">
     <p class="error-message milli island-1-4 push-0" id="state-province-error">
@@ -85,6 +85,7 @@
       <option value="Wisconsin">
       <option value="Wyoming">
     </datalist>
-  </form>
+  </div>
+  <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
 </body>
 </html>

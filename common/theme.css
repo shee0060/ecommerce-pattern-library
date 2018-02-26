@@ -16,10 +16,14 @@ h1, h2, h4, h5, blockquote, cite, strong, del, ins, b, u, s {
   color: var(--color-primary);
 }
 
-h3, h6, a, em, ins, dfn, i, mark {
+h3, h6, a, em, ins, dfn, i {
   color: var(--color-primary-light);
 }
 
 ul, li, ol, dl, dt, dd {
   color: var(--color-accent);
+}
+
+mark {
+  background-color: var(--color-accent-light);
 }

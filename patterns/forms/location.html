@@ -13,8 +13,8 @@
   <link href="../buttons/buttons.css" rel="stylesheet">
 </head>
 <body>
-  <form>
-    <fieldset>
+  <div novalidate>
+    <fieldset class="one-of-many">
       <legend class="mega push">Select ship location</legend>
       <input class="push-1-2" id="forward" type="radio" name="room-type">
       <label class="push-1-2" for="forward">Forward</label>
@@ -23,6 +23,7 @@
       <input class="push-1-2"id="back" type="radio" name="room-type">
       <label class="push-1-2" for="back">Back</label>
     </fieldset>
-  </form>
+  </div>
+  <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
 </body>
 </html>

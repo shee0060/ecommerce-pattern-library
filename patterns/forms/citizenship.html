@@ -13,7 +13,7 @@
   <link href="../buttons/buttons.css" rel="stylesheet">
 </head>
 <body>
-  <form>
+  <div novalidate>
     <label class="push-1-2" id="citizenship">Citizenship</label>
     <input id="citizenship" list="country-list" required aria-desscribedby="citizenship-error">
     <p class="error-message milli island-1-4 push-0" id="citizenship-error">
@@ -218,6 +218,8 @@
       <option value="Zambia">
       <option value="Zimbabwe">
     </datalist>
-  </form>
+  </div>
+
+  <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
 </body>
 </html>

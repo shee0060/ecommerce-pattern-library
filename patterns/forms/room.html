@@ -13,8 +13,8 @@
   <link href="../buttons/buttons.css" rel="stylesheet">
 </head>
 <body>
-  <form>
-    <fieldset>
+  <div>
+    <fieldset class="one-of-many">
       <legend class="mega push">Select your room</legend>
       <input class="push-1-2" id="interior" type="radio" name="room-type" aria-desscribedby="room-type-error">
       <label class="push-1-2" for="interior">Interior</label>
@@ -25,7 +25,13 @@
       <input class="push-1-2" id="luxury" type="radio" name="room-type"
       aria-desscribedby="room-type-error">
       <label class="push-1-2" for="luxury">Luxury</label>
+
+      <p class="error-message milli island-1-4 push-0" id="tel-error">
+        <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
+        <span class="icon-label">Please provide a valid phone number</span>
+      </p>
     </fieldset>
-  </form>
+  </div>
+  <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
 </body>
 </html>

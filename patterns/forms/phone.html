@@ -13,13 +13,14 @@
   <link href="../buttons/buttons.css" rel="stylesheet">
 </head>
 <body>
-  <form>
+  <div novalidate>
     <label class="push-1-2" id="tel">Phone Number</label>
     <input id="tel" type="tel" required aria-desscribedby="tel-error">
     <p class="error-message milli island-1-4 push-0" id="tel-error">
       <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
       <span class="icon-label">Please provide a valid phone number</span>
     </p>
-  </form>
+  </div>
+  <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
 </body>
 </html>

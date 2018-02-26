@@ -13,8 +13,8 @@
   <link href="../buttons/buttons.css" rel="stylesheet">
 </head>
 <body>
-  <form>
-    <fieldset>
+  <div novalidate>
+    <fieldset class="one-of-many">
       <legend class="mega push">Guest Information</legend>
       <label class="push-1-2" for="name">First Name</label>
       <input class="push-1-2" id="name" type="text" required aria-describedby="name-error">
@@ -25,6 +25,7 @@
         <span class="icon-label">Please provide a first and last name</span>
       </p>
     </fieldset>
-  </form>
+  </div>
+  <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
 </body>
 </html>
