@@ -348,9 +348,9 @@ const patternBotIncludes = function (manifest) {
 /** 
  * Patternbot library manifest
  * /Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library
- * @version 1519620559880
+ * @version 1519651166979
  */
-const patternManifest_1519620559879 = {
+const patternManifest_1519651166979 = {
   "commonInfo": {
     "modulifier": [
       "responsive",
@@ -447,11 +447,18 @@ const patternManifest_1519620559879 = {
         "neutral": [],
         "accent": [
           {
-            "name": "--color-accent",
-            "namePretty": "Accent",
+            "name": "--color-accent-dark",
+            "namePretty": "Accent dark",
             "raw": "#ad92cc",
             "hex": "#ad92cc",
             "rgba": "rgba(173, 146, 204, 1)"
+          },
+          {
+            "name": "--color-accent-light",
+            "namePretty": "Accent light",
+            "raw": "#e1d6ea",
+            "hex": "#e1d6ea",
+            "rgba": "rgba(225, 214, 234, 1)"
           }
         ]
       },
@@ -496,7 +503,8 @@ const patternManifest_1519620559879 = {
         "--color-primary": "#021d49",
         "--color-primary-light": "#b6c7dd",
         "--color-secondary": "#bfbfbf",
-        "--color-accent": "#ad92cc"
+        "--color-accent-dark": "#ad92cc",
+        "--color-accent-light": "#e1d6ea"
       },
       "fontsRaw": {
         "--font-primary": "\"Roboto\", sans-serif",
@@ -516,18 +524,19 @@ const patternManifest_1519620559879 = {
     },
     "icons": [
       "boarding",
-      "email-dark",
-      "email-light",
+      "error",
       "facebook-dark",
-      "facebook-light",
+      "email-light",
+      "email-dark",
       "flying",
+      "facebook-light",
       "instagram-dark",
-      "instagram-light",
       "moon-bouncing",
-      "orbiting",
       "surfing",
-      "take-off",
+      "instagram-light",
+      "orbiting",
       "twitter-dark",
+      "take-off",
       "twitter-light"
     ],
     "interfaceColours": {
@@ -795,10 +804,64 @@ const patternManifest_1519620559879 = {
       "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms",
       "html": [
         {
-          "name": "forms",
-          "namePretty": "Forms",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/forms.html",
-          "localPath": "patterns/forms/forms.html"
+          "name": "citizenship",
+          "namePretty": "Citizenship",
+          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/citizenship.html",
+          "localPath": "patterns/forms/citizenship.html"
+        },
+        {
+          "name": "dob",
+          "namePretty": "Dob",
+          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/dob.html",
+          "localPath": "patterns/forms/dob.html"
+        },
+        {
+          "name": "email",
+          "namePretty": "Email",
+          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/email.html",
+          "localPath": "patterns/forms/email.html"
+        },
+        {
+          "name": "gender",
+          "namePretty": "Gender",
+          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/gender.html",
+          "localPath": "patterns/forms/gender.html"
+        },
+        {
+          "name": "group-info",
+          "namePretty": "Group info",
+          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/group-info.html",
+          "localPath": "patterns/forms/group-info.html"
+        },
+        {
+          "name": "location",
+          "namePretty": "Location",
+          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/location.html",
+          "localPath": "patterns/forms/location.html"
+        },
+        {
+          "name": "names",
+          "namePretty": "Names",
+          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/names.html",
+          "localPath": "patterns/forms/names.html"
+        },
+        {
+          "name": "phone",
+          "namePretty": "Phone",
+          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/phone.html",
+          "localPath": "patterns/forms/phone.html"
+        },
+        {
+          "name": "room",
+          "namePretty": "Room",
+          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/room.html",
+          "localPath": "patterns/forms/room.html"
+        },
+        {
+          "name": "state-province",
+          "namePretty": "State province",
+          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/state-province.html",
+          "localPath": "patterns/forms/state-province.html"
         }
       ],
       "md": [],
@@ -832,5 +895,5 @@ const patternManifest_1519620559879 = {
   }
 };
 
-patternBotIncludes(patternManifest_1519620559879);
+patternBotIncludes(patternManifest_1519651166979);
 }());

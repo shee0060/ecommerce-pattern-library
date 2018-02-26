@@ -1,0 +1,46 @@
+legend {
+  background-color: var(--color-primary);
+  color: #fff;
+  font-family: var(--font-secondary);
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+label {
+  color: var(--color-primary);
+}
+
+input {
+  border: 2px solid var(--color-primary);
+  border-radius: 3px;
+}
+
+input:invalid {
+  border-color: var(--color-accent-dark);
+}
+
+input[type="radio"] {
+  border-color: var(--color-primary);
+}
+
+input:focus,
+input[type="radio"] {
+  border-color: var(--color-primary-light);
+}
+
+.error-message {
+  display: none;
+  background-color: var(--color-accent-light);
+  color: var(--color-accent-dark);
+}
+
+.error-message-highlighted {
+  background-color: var(--color-accent-dark);
+  color: #fff;
+}
+
+.error-message:first-child,
+input:invalid + .error-message,
+input:invalid + label + .error-message {
+  display: block;
+}

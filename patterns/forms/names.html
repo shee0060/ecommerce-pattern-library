@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Text Banner Light</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="../../common/modules.css" rel="stylesheet">
+  <link href="../../common/grid.css" rel="stylesheet">
+  <link href="../../common/type.css" rel="stylesheet">
+  <link href="../../common/theme.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto:300,400,700" rel="stylesheet">
+  <link href="forms.css" rel="stylesheet">
+  <link href="../buttons/buttons.css" rel="stylesheet">
+</head>
+<body>
+  <form>
+    <fieldset>
+      <legend class="mega push">Guest Information</legend>
+      <label class="push-1-2" for="name">First Name</label>
+      <input class="push-1-2" id="name" type="text" required aria-describedby="name-error">
+      <label class="push-1-2" for="name">Last Name</label>
+      <input id="name" type="text" required aria-describedby="name-error">
+      <p class="error-message milli island-1-4 push-0" id="name-error">
+        <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
+        <span class="icon-label">Please provide a first and last name</span>
+      </p>
+    </fieldset>
+  </form>
+</body>
+</html>

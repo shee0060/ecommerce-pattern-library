@@ -2,7 +2,8 @@
   --color-primary: #021d49;
   --color-primary-light: #b6c7dd;
   --color-secondary: #bfbfbf;
-  --color-accent: #ad92cc;
+  --color-accent-dark: #ad92cc;
+  --color-accent-light: #e1d6ea;
   --font-primary: "Roboto", sans-serif;
   --font-secondary: "Oswald", sans-serif;
 }
