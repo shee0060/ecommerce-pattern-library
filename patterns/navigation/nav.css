@@ -2,8 +2,17 @@
   color: #fff;
 }
 
-h1 {
+.nav-header {
   position: relative;
+  border-bottom: 5px solid var(--color-primary);
+}
+
+.nav-top {
+  display: none;
+}
+
+.nav-ul {
+  margin: 0;
 }
 
 .nav-top a {
@@ -38,11 +47,22 @@ h1 {
 
 .nav-btn {
   display: block;
-  width: 50px;
+  width: 96px;
   position: absolute;
+  right: 30px;
 }
 
 .nav-btn img {
   display: block;
   width: 100%;
+}
+
+@media only screen and (min-width: 60em) {
+  .nav-mobile {
+    display: none;
+  }
+
+  .nav-top {
+    display: block;
+  }
 }

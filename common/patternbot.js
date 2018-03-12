@@ -348,9 +348,9 @@ const patternBotIncludes = function (manifest) {
 /** 
  * Patternbot library manifest
  * /Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library
- * @version 1520859258774
+ * @version 1520861365204
  */
-const patternManifest_1520859258774 = {
+const patternManifest_1520861365204 = {
   "commonInfo": {
     "modulifier": [
       "responsive",
@@ -868,12 +868,6 @@ const patternManifest_1520859258774 = {
           "namePretty": "Anchor nav",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/navigation/anchor-nav.html",
           "localPath": "patterns/navigation/anchor-nav.html"
-        },
-        {
-          "name": "top-nav",
-          "namePretty": "Top nav",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/navigation/top-nav.html",
-          "localPath": "patterns/navigation/top-nav.html"
         }
       ],
       "md": [],
@@ -953,5 +947,5 @@ const patternManifest_1520859258774 = {
   }
 };
 
-patternBotIncludes(patternManifest_1520859258774);
+patternBotIncludes(patternManifest_1520861365204);
 }());

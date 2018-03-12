@@ -37,14 +37,18 @@
           <div class="grid">
             <div class="gutter-1-2 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
               <label class="push-1-2" for="name">First Name</label>
-              <input class="push-1-2" id="name" type="text" required aria-describedby="name-error">
+              <input id="name" type="text" required aria-describedby="first-name-error">
+              <p class="error-message milli island-1-4 push-0" id="first-name-error">
+                <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
+                <span class="icon-label">Please provide a first name</span>
+              </p>
             </div>
             <div class="gutter-1-2 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
               <label class="push-1-2" for="name">Last Name</label>
-              <input id="name" type="text" required aria-describedby="name-error">
-              <p class="error-message milli island-1-4 push-0" id="name-error">
+              <input id="name" type="text" required aria-describedby="last-name-error">
+              <p class="error-message milli island-1-4 push-0" id="last-name-error">
                 <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
-                <span class="icon-label">Please provide a first and last name</span>
+                <span class="icon-label">Please provide a last name</span>
               </p>
             </div>
           </div>

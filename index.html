@@ -1564,7 +1564,16 @@
                   <svg><use xlink:href="#icon-copy"></use></svg>
                 </i>
               </button>
-              <code><pre id="footers-footer-code-sample-copy-chunk">&lt;footer class="grid pad-t-2 pad-b-2"&gt;
+              <code><pre id="footers-footer-code-sample-copy-chunk">&lt;footer class="grid pad-t pad-b"&gt;
+  &lt;nav class="unit xs-1 s-1 m-1 l-0 xl-0 nav-bottom gutter" id="nav" role="navigation" tabindex="0">
+    &lt;ul class="text-center">
+      &lt;li>&lt;a href="index.html" class="current-bottom">Home&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="#">Ships&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="#">Destinations&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="#">Excursions&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="#">Deals&lt;/a>&lt;/li>
+    &lt;/ul>
+  &lt;/nav>
   &lt;div class="text-center unit xs-1-4 s-1-4 m-1-4 l-1-4 xl-1-4">
     &lt;i class="icon i-64">
         &lt;a href="#">
@@ -2509,12 +2518,16 @@
   &lt;fieldset class="one-of-many">
     &lt;legend class="mega push">Guest Information&lt;/legend>
     &lt;label class="push-1-2" for="name">First Name&lt;/label>
-    &lt;input class="push-1-2" id="name" type="text" required aria-describedby="name-error">
-    &lt;label class="push-1-2" for="name">Last Name&lt;/label>
-    &lt;input id="name" type="text" required aria-describedby="name-error">
-    &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+    &lt;input id="name" type="text" required aria-describedby="first-name-error">
+    &lt;p class="error-message milli island-1-4 push-0" id="first-name-error">
       &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#error"/>&lt;/svg>&lt;/i>
-      &lt;span class="icon-label">Please provide a first and last name&lt;/span>
+      &lt;span class="icon-label">Please provide a first name&lt;/span>
+    &lt;/p>
+    &lt;label class="push-1-2" for="name">Last Name&lt;/label>
+    &lt;input id="name" type="text" required aria-describedby="last-name-error">
+    &lt;p class="error-message milli island-1-4 push-0" id="last-name-error">
+      &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#error"/>&lt;/svg>&lt;/i>
+      &lt;span class="icon-label">Please provide a last name&lt;/span>
     &lt;/p>
   &lt;/fieldset>
 &lt;/div>
@@ -3061,47 +3074,38 @@
 
 </section>
 
-        <section class="pattern" id="navigation" role="tabpanel" hidden aria-hidden="true" >
-  <div class="pattern-toolbar gutter pad-t-1-4 pad-b-1-8 relative" >
+        <section class="pattern" id="navigation" role="tabpanel" hidden aria-hidden="true" style="">
+  <div class="pattern-toolbar gutter pad-t-1-4 pad-b-1-8 relative" style="">
     <h2 class="pattern-name exa push-1-4" style="color: #021d49; font-family: &quot;Oswald&quot;, sans-serif;">Navigation</h2>
-      <nav class="pattern-nav">
-        <ol class="list-group-inline push-1-4 pad-b-1-4">
-            <li><a href="#navigation--anchor-nav">Anchor nav</a></li>
-            <li><a href="#navigation--top-nav">Top nav</a></li>
-        </ol>
-      </nav>
+        <ul class="list-group-inline gutter absolute pin-cr">
+            <li>
+              <button class="center-contents-vertical pattern-tool-btn pattern-code-btn" title="Show code" aria-label="Show code" aria-pressed="false" aria-controls="navigation-anchor-nav-code-sample">
+                <i class="icon i-18">
+                  <svg><use xlink:href="#icon-code"></use></svg>
+                </i>
+              </button>
+            </li>
+            <li>
+              <button class="center-contents-vertical pattern-tool-btn pattern-include-btn" title="Copy include" aria-label="Copy include" data-copy-include-pattern="navigation/anchor-nav" hidden>
+                <i class="icon i-18">
+                  <svg><use xlink:href="#icon-copy"></use></svg>
+                </i>
+              </button>
+            </li>
+            <li>
+              <a class="center-contents-vertical pattern-tool-btn pattern-pop-btn" href="patterns/navigation/anchor-nav.html" target="_blank" title="Open pattern in a new tab" aria-label="Open pattern in a new tab">
+                <i class="icon i-18">
+                  <svg><use xlink:href="#icon-pop-out"></use></svg>
+                </i>
+              </a>
+            </li>
+        </ul>
   </div>
 
 
   
 
     <div class="pattern-details " id="navigation--anchor-nav" style="">
-        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4" style="">
-          <h3 class="pattern-name tera push-1-8">Anchor nav</h3>
-            <ul class="list-group-inline gutter absolute pin-cr">
-                <li>
-                  <button class="center-contents-vertical pattern-tool-btn pattern-code-btn" title="Show code" aria-label="Show code" aria-pressed="false" aria-controls="navigation-anchor-nav-code-sample">
-                    <i class="icon i-18">
-                      <svg><use xlink:href="#icon-code"></use></svg>
-                    </i>
-                  </button>
-                </li>
-                <li>
-                  <button class="center-contents-vertical pattern-tool-btn pattern-include-btn" title="Copy include" aria-label="Copy include" data-copy-include-pattern="navigation/anchor-nav" hidden>
-                    <i class="icon i-18">
-                      <svg><use xlink:href="#icon-copy"></use></svg>
-                    </i>
-                  </button>
-                </li>
-                <li>
-                  <a class="btn center-contents-vertical pattern-tool-btn pattern-pop-btn" href="patterns/navigation/anchor-nav.html" target="_blank" title="Open pattern in a new tab" aria-label="Open pattern in a new tab">
-                    <i class="icon i-18">
-                      <svg><use xlink:href="#icon-pop-out"></use></svg>
-                    </i>
-                  </a>
-                </li>
-            </ul>
-        </div>
 
       <div class="pattern-examples pad-t-1-2 pad-b-1-2" style="">
         <div class="gutter-2 pad-t-1-2 pad-b-1-2">
@@ -3131,108 +3135,43 @@
                 </i>
               </button>
               <code><pre id="navigation-anchor-nav-code-sample-copy-chunk">&lt;header class="nav-header"&gt;
-  &lt;div class="grid-right gutter grid">
-    &lt;div class="unit xs-2-3 s-2-3 m-2-3">
-      &lt;h1 class="peta">Orion Exploration&lt;/h1>
+  &lt;div class="pad-t-1-2 pad-b-1-2 grid-right gutter grid">
+    &lt;div class="nav-mobile unit xs-2-3 s-2-3 m-2-3">
+      &lt;i class="icon i-96">
+          &lt;a href="index.html">
+            &lt;img class="img-flex" src="../../images/logo.svg">
+          &lt;/a>
+        &lt;/i>
     &lt;/div>
 
-    &lt;div class="unit xs-1-3 s-1-3 m-1-3">
+    &lt;div class="nav-mobile unit xs-1-3 s-1-3 m-1-3">
       &lt;a class="nav-btn" href="#nav">
-          &lt;i class="icon i-64 push-1-2">
+          &lt;i class="icon i-96 push-1-2">
             &lt;svg>&lt;use xlink:href="../../images/icons.svg#nav"/>&lt;/svg>
           &lt;/i>
         &lt;/a>
     &lt;/div>
   &lt;/div>
-&lt;/header>
 
-&lt;nav class="nav-bottom gutter" id="nav" role="navigation" tabindex="0">
-  &lt;ul class="text-center">
-    &lt;li>&lt;a href="index.html" class="current-bottom">Home&lt;/a>&lt;/li>
-    &lt;li>&lt;a href="#">Ships&lt;/a>&lt;/li>
-    &lt;li>&lt;a href="#">Destinations&lt;/a>&lt;/li>
-    &lt;li>&lt;a href="#">Excursions&lt;/a>&lt;/li>
-    &lt;li>&lt;a href="#">Deals&lt;/a>&lt;/li>
-  &lt;/ul>
-&lt;/nav>
-</pre></code>
-            </div>
-          </div>
-      </div>
-    </div>
-    <div class="pattern-details " id="navigation--top-nav" style="">
-        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4" style="">
-          <h3 class="pattern-name tera push-1-8">Top nav</h3>
-            <ul class="list-group-inline gutter absolute pin-cr">
-                <li>
-                  <button class="center-contents-vertical pattern-tool-btn pattern-code-btn" title="Show code" aria-label="Show code" aria-pressed="false" aria-controls="navigation-top-nav-code-sample">
-                    <i class="icon i-18">
-                      <svg><use xlink:href="#icon-code"></use></svg>
-                    </i>
-                  </button>
-                </li>
-                <li>
-                  <button class="center-contents-vertical pattern-tool-btn pattern-include-btn" title="Copy include" aria-label="Copy include" data-copy-include-pattern="navigation/top-nav" hidden>
-                    <i class="icon i-18">
-                      <svg><use xlink:href="#icon-copy"></use></svg>
-                    </i>
-                  </button>
-                </li>
-                <li>
-                  <a class="btn center-contents-vertical pattern-tool-btn pattern-pop-btn" href="patterns/navigation/top-nav.html" target="_blank" title="Open pattern in a new tab" aria-label="Open pattern in a new tab">
-                    <i class="icon i-18">
-                      <svg><use xlink:href="#icon-pop-out"></use></svg>
-                    </i>
-                  </a>
-                </li>
-            </ul>
-        </div>
+  &lt;div class="grid">
+    &lt;div class="nav-top pad-b-1-2 gutter unit xs-1 s-1 m-1-3 l-1-3 xl-1-3">
+      &lt;i class="icon i-96">
+          &lt;a href="index.html">
+            &lt;img class="img-flex" src="../../images/logo.svg">
+          &lt;/a>
+        &lt;/i>
+    &lt;/div>
 
-      <div class="pattern-examples pad-t-1-2 pad-b-1-2" style="">
-        <div class="gutter-2 pad-t-1-2 pad-b-1-2">
-          <div class="resizeable-pattern relative" style="">
-            <i class="icon i-32 patternbot-iframe-loading-gears absolute pin-c"><svg><use xlink:href="#patternbot-iframe-loading-gears"></use></svg></i>
-            <iframe data-src="patterns/navigation/top-nav.html" scrolling="no" onload="resizeIframe(this)"  ></iframe>
-              <div class="resizeable-pattern-length">
-                <div class="resize-handle resize-handle-left" style="">
-                  <i class="icon i-18">
-                    <svg><use xlink:href="#icon-resize-handle" /></svg>
-                  </i>
-                </div>
-                <div class="resize-handle resize-handle-right" style="">
-                  <i class="icon i-18">
-                    <svg><use xlink:href="#icon-resize-handle" /></svg>
-                  </i>
-                </div>
-              </div>
-          </div>
-        </div>
-
-          <div class="pattern-code-wrap gutter pad-t-1-2 pad-b-1-2" hidden aria-hidden="true" id="navigation-top-nav-code-sample" tabindex="-1">
-            <div class="pattern-code relative milli island-1-2" style="">
-              <button class="center-contents-vertical pattern-tool-btn pattern-copy-btn absolute pin-tr" title="Copy code" aria-label="Copy code" data-clipboard-target="#navigation-top-nav-code-sample-copy-chunk" hidden>
-                <i class="icon i-18">
-                  <svg><use xlink:href="#icon-copy"></use></svg>
-                </i>
-              </button>
-              <code><pre id="navigation-top-nav-code-sample-copy-chunk">&lt;header class="grid pad-t pad-b-1-2"&gt;
-  &lt;div class="gutter unit xs-1 s-1 m-1-3 l-1-3 xl-1-3">
-    &lt;i class="icon i-64">
-        &lt;a href="index.html">
-          &lt;img class="img-flex" src="../../images/logo.svg">
-        &lt;/a>
-      &lt;/i>
+    &lt;nav class="nav-top pad-t gutter unit xs-1 s-1 m-2-3 l-2-3 xl-2-3" id="nav" role="navigation" tabindex="0">
+      &lt;ul class="nav-ul list-group list-group-inline">
+        &lt;li class="gutter-1-2">&lt;a href="index.html" class="current-top">Home&lt;/a>&lt;/li>
+        &lt;li class="gutter-1-2">&lt;a href="index.html">Ships&lt;/a>&lt;/li>
+        &lt;li class="gutter-1-2">&lt;a href="index.html">Destinations&lt;/a>&lt;/li>
+        &lt;li class="gutter-1-2">&lt;a href="index.html">Excursions&lt;/a>&lt;/li>
+        &lt;li class="gutter-1-2">&lt;a href="index.html">Deals&lt;/a>&lt;/li>
+      &lt;/ul>
+    &lt;/nav>
   &lt;/div>
-
-  &lt;nav class="nav-top gutter text-right unit xs-1 s-1 m-2-3 l-2-3 xl-2-3" id="nav" role="navigation" tabindex="0">
-    &lt;ul class="list-group list-group-inline">
-      &lt;li class="gutter-1-2">&lt;a href="index.html" class="current-top">Home&lt;/a>&lt;/li>
-      &lt;li class="gutter-1-2">&lt;a href="index.html">Ships&lt;/a>&lt;/li>
-      &lt;li class="gutter-1-2">&lt;a href="index.html">Destinations&lt;/a>&lt;/li>
-      &lt;li class="gutter-1-2">&lt;a href="index.html">Excursions&lt;/a>&lt;/li>
-      &lt;li class="gutter-1-2">&lt;a href="index.html">Deals&lt;/a>&lt;/li>
-    &lt;/ul>
-  &lt;/nav>
 &lt;/header>
 </pre></code>
             </div>
@@ -3480,14 +3419,18 @@
         &lt;div class="grid">
           &lt;div class="gutter-1-2 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
             &lt;label class="push-1-2" for="name">First Name&lt;/label>
-            &lt;input class="push-1-2" id="name" type="text" required aria-describedby="name-error">
+            &lt;input id="name" type="text" required aria-describedby="first-name-error">
+            &lt;p class="error-message milli island-1-4 push-0" id="first-name-error">
+              &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#error"/>&lt;/svg>&lt;/i>
+              &lt;span class="icon-label">Please provide a first name&lt;/span>
+            &lt;/p>
           &lt;/div>
           &lt;div class="gutter-1-2 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
             &lt;label class="push-1-2" for="name">Last Name&lt;/label>
-            &lt;input id="name" type="text" required aria-describedby="name-error">
-            &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+            &lt;input id="name" type="text" required aria-describedby="last-name-error">
+            &lt;p class="error-message milli island-1-4 push-0" id="last-name-error">
               &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#error"/>&lt;/svg>&lt;/i>
-              &lt;span class="icon-label">Please provide a first and last name&lt;/span>
+              &lt;span class="icon-label">Please provide a last name&lt;/span>
             &lt;/p>
           &lt;/div>
         &lt;/div>

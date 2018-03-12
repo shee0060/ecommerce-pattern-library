@@ -17,12 +17,16 @@
     <fieldset class="one-of-many">
       <legend class="mega push">Guest Information</legend>
       <label class="push-1-2" for="name">First Name</label>
-      <input class="push-1-2" id="name" type="text" required aria-describedby="name-error">
-      <label class="push-1-2" for="name">Last Name</label>
-      <input id="name" type="text" required aria-describedby="name-error">
-      <p class="error-message milli island-1-4 push-0" id="name-error">
+      <input id="name" type="text" required aria-describedby="first-name-error">
+      <p class="error-message milli island-1-4 push-0" id="first-name-error">
         <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
-        <span class="icon-label">Please provide a first and last name</span>
+        <span class="icon-label">Please provide a first name</span>
+      </p>
+      <label class="push-1-2" for="name">Last Name</label>
+      <input id="name" type="text" required aria-describedby="last-name-error">
+      <p class="error-message milli island-1-4 push-0" id="last-name-error">
+        <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error" /></svg></i>
+        <span class="icon-label">Please provide a last name</span>
       </p>
     </fieldset>
   </div>
