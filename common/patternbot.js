@@ -348,9 +348,9 @@ const patternBotIncludes = function (manifest) {
 /** 
  * Patternbot library manifest
  * /Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library
- * @version 1519659114646
+ * @version 1520816431643
  */
-const patternManifest_1519659114646 = {
+const patternManifest_1520816431643 = {
   "commonInfo": {
     "modulifier": [
       "responsive",
@@ -524,20 +524,21 @@ const patternManifest_1519659114646 = {
     },
     "icons": [
       "boarding",
+      "email-dark",
+      "email-light",
       "error",
       "facebook-dark",
-      "email-light",
-      "email-dark",
       "flying",
-      "facebook-light",
-      "instagram-dark",
-      "moon-bouncing",
-      "surfing",
       "instagram-light",
+      "facebook-light",
+      "nav",
+      "instagram-dark",
       "orbiting",
-      "twitter-dark",
+      "moon-bouncing",
       "take-off",
-      "twitter-light"
+      "surfing",
+      "twitter-light",
+      "twitter-dark"
     ],
     "interfaceColours": {
       "primary": 0,
@@ -565,7 +566,10 @@ const patternManifest_1519659114646 = {
       "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/banner",
       "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/buttons",
       "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards",
+      "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/footers",
       "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms",
+      "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/headers",
+      "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/navigation",
       "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections"
     ],
     "pages": []
@@ -704,6 +708,14 @@ const patternManifest_1519659114646 = {
       ]
     },
     {
+      "name": "footers",
+      "namePretty": "Footers",
+      "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/footers",
+      "html": [],
+      "md": [],
+      "css": []
+    },
+    {
       "name": "forms",
       "namePretty": "Forms",
       "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms",
@@ -780,6 +792,62 @@ const patternManifest_1519659114646 = {
       ]
     },
     {
+      "name": "headers",
+      "namePretty": "Headers",
+      "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/headers",
+      "html": [
+        {
+          "name": "header-dark",
+          "namePretty": "Header dark",
+          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/headers/header-dark.html",
+          "localPath": "patterns/headers/header-dark.html"
+        },
+        {
+          "name": "header-light",
+          "namePretty": "Header light",
+          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/headers/header-light.html",
+          "localPath": "patterns/headers/header-light.html"
+        }
+      ],
+      "md": [],
+      "css": [
+        {
+          "name": "headers",
+          "namePretty": "Headers",
+          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/headers/headers.css",
+          "localPath": "patterns/headers/headers.css"
+        }
+      ]
+    },
+    {
+      "name": "navigation",
+      "namePretty": "Navigation",
+      "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/navigation",
+      "html": [
+        {
+          "name": "anchor-nav",
+          "namePretty": "Anchor nav",
+          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/navigation/anchor-nav.html",
+          "localPath": "patterns/navigation/anchor-nav.html"
+        },
+        {
+          "name": "top-nav",
+          "namePretty": "Top nav",
+          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/navigation/top-nav.html",
+          "localPath": "patterns/navigation/top-nav.html"
+        }
+      ],
+      "md": [],
+      "css": [
+        {
+          "name": "nav",
+          "namePretty": "Nav",
+          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/navigation/nav.css",
+          "localPath": "patterns/navigation/nav.css"
+        }
+      ]
+    },
+    {
       "name": "sections",
       "namePretty": "Sections",
       "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections",
@@ -840,5 +908,5 @@ const patternManifest_1519659114646 = {
   }
 };
 
-patternBotIncludes(patternManifest_1519659114646);
+patternBotIncludes(patternManifest_1520816431643);
 }());
