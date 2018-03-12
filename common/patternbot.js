@@ -348,9 +348,9 @@ const patternBotIncludes = function (manifest) {
 /** 
  * Patternbot library manifest
  * /Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library
- * @version 1520819092801
+ * @version 1520819247764
  */
-const patternManifest_1520819092801 = {
+const patternManifest_1520819247764 = {
   "commonInfo": {
     "modulifier": [
       "responsive",
@@ -711,9 +711,23 @@ const patternManifest_1520819092801 = {
       "name": "footers",
       "namePretty": "Footers",
       "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/footers",
-      "html": [],
+      "html": [
+        {
+          "name": "footer",
+          "namePretty": "Footer",
+          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/footers/footer.html",
+          "localPath": "patterns/footers/footer.html"
+        }
+      ],
       "md": [],
-      "css": []
+      "css": [
+        {
+          "name": "footer",
+          "namePretty": "Footer",
+          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/footers/footer.css",
+          "localPath": "patterns/footers/footer.css"
+        }
+      ]
     },
     {
       "name": "forms",
@@ -908,5 +922,5 @@ const patternManifest_1520819092801 = {
   }
 };
 
-patternBotIncludes(patternManifest_1520819092801);
+patternBotIncludes(patternManifest_1520819247764);
 }());
