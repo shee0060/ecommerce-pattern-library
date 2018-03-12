@@ -348,9 +348,9 @@ const patternBotIncludes = function (manifest) {
 /** 
  * Patternbot library manifest
  * /Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library
- * @version 1520821867745
+ * @version 1520859258774
  */
-const patternManifest_1520821867744 = {
+const patternManifest_1520859258774 = {
   "commonInfo": {
     "modulifier": [
       "responsive",
@@ -647,12 +647,37 @@ const patternManifest_1520821867744 = {
       "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards",
       "html": [
         {
-          "name": "no-button",
-          "namePretty": "No button",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards/no-button.html",
-          "localPath": "patterns/cards/no-button.html",
+          "name": "no-button-dark",
+          "namePretty": "No button dark",
+          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards/no-button-dark.html",
+          "localPath": "patterns/cards/no-button-dark.html",
           "readme": {
             "width": 300
+          }
+        },
+        {
+          "name": "no-button-light",
+          "namePretty": "No button light",
+          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards/no-button-light.html",
+          "localPath": "patterns/cards/no-button-light.html",
+          "readme": {
+            "width": 300
+          }
+        },
+        {
+          "name": "no-button-white",
+          "namePretty": "No button white",
+          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards/no-button-white.html",
+          "localPath": "patterns/cards/no-button-white.html",
+          "readme": {
+            "width": 300,
+            "background-color": "--color-primary",
+            "padding": "20px",
+            "backgroundColour": "#021d49",
+            "interfaceColours": {
+              "primary": 255,
+              "opposite": 0
+            }
           }
         },
         {
@@ -928,5 +953,5 @@ const patternManifest_1520821867744 = {
   }
 };
 
-patternBotIncludes(patternManifest_1520821867744);
+patternBotIncludes(patternManifest_1520859258774);
 }());
