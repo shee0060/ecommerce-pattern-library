@@ -388,9 +388,9 @@ const patternBotIncludes = function (manifest) {
 /** 
  * Patternbot library manifest
  * /Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library
- * @version 1521429250360
+ * @version 1521429948042
  */
-const patternManifest_1521429250360 = {
+const patternManifest_1521429948041 = {
   "commonInfo": {
     "modulifier": [
       "responsive",
@@ -633,7 +633,14 @@ const patternManifest_1521429250360 = {
           "namePretty": "Hero banner dark",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/banner/hero-banner-dark.html",
           "localPath": "patterns/banner/hero-banner-dark.html",
-          "readme": {}
+          "readme": {
+            "background-color": "--color-primary",
+            "backgroundColour": "#021d49",
+            "interfaceColours": {
+              "primary": 255,
+              "opposite": 0
+            }
+          }
         },
         {
           "name": "hero-banner-light",
@@ -792,7 +799,14 @@ const patternManifest_1521429250360 = {
           "localPath": "patterns/footers/footer.html"
         }
       ],
-      "md": [],
+      "md": [
+        {
+          "name": "readme",
+          "namePretty": "Readme",
+          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/footers/README.md",
+          "localPath": "patterns/footers/README.md"
+        }
+      ],
       "css": [
         {
           "name": "footer",
@@ -883,12 +897,6 @@ const patternManifest_1521429250360 = {
       "namePretty": "Headers",
       "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/headers",
       "html": [
-        {
-          "name": "header-dark",
-          "namePretty": "Header dark",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/headers/header-dark.html",
-          "localPath": "patterns/headers/header-dark.html"
-        },
         {
           "name": "header-light",
           "namePretty": "Header light",
@@ -1001,5 +1009,5 @@ const patternManifest_1521429250360 = {
   }
 };
 
-patternBotIncludes(patternManifest_1521429250360);
+patternBotIncludes(patternManifest_1521429948041);
 }());
