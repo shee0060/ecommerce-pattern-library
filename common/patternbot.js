@@ -388,9 +388,9 @@ const patternBotIncludes = function (manifest) {
 /** 
  * Patternbot library manifest
  * /Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library
- * @version 1521429948042
+ * @version 1521431168313
  */
-const patternManifest_1521429948041 = {
+const patternManifest_1521431168313 = {
   "commonInfo": {
     "modulifier": [
       "responsive",
@@ -796,7 +796,8 @@ const patternManifest_1521429948041 = {
           "name": "footer",
           "namePretty": "Footer",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/footers/footer.html",
-          "localPath": "patterns/footers/footer.html"
+          "localPath": "patterns/footers/footer.html",
+          "readme": {}
         }
       ],
       "md": [
@@ -825,64 +826,81 @@ const patternManifest_1521429948041 = {
           "name": "citizenship",
           "namePretty": "Citizenship",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/citizenship.html",
-          "localPath": "patterns/forms/citizenship.html"
+          "localPath": "patterns/forms/citizenship.html",
+          "readme": {}
         },
         {
           "name": "dob",
           "namePretty": "Dob",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/dob.html",
-          "localPath": "patterns/forms/dob.html"
+          "localPath": "patterns/forms/dob.html",
+          "readme": {}
         },
         {
           "name": "email",
           "namePretty": "Email",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/email.html",
-          "localPath": "patterns/forms/email.html"
+          "localPath": "patterns/forms/email.html",
+          "readme": {}
         },
         {
           "name": "gender",
           "namePretty": "Gender",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/gender.html",
-          "localPath": "patterns/forms/gender.html"
+          "localPath": "patterns/forms/gender.html",
+          "readme": {}
         },
         {
           "name": "group-info",
           "namePretty": "Group info",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/group-info.html",
-          "localPath": "patterns/forms/group-info.html"
+          "localPath": "patterns/forms/group-info.html",
+          "readme": {}
         },
         {
           "name": "location",
           "namePretty": "Location",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/location.html",
-          "localPath": "patterns/forms/location.html"
+          "localPath": "patterns/forms/location.html",
+          "readme": {}
         },
         {
           "name": "names",
           "namePretty": "Names",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/names.html",
-          "localPath": "patterns/forms/names.html"
+          "localPath": "patterns/forms/names.html",
+          "readme": {}
         },
         {
           "name": "phone",
           "namePretty": "Phone",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/phone.html",
-          "localPath": "patterns/forms/phone.html"
+          "localPath": "patterns/forms/phone.html",
+          "readme": {}
         },
         {
           "name": "room",
           "namePretty": "Room",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/room.html",
-          "localPath": "patterns/forms/room.html"
+          "localPath": "patterns/forms/room.html",
+          "readme": {}
         },
         {
           "name": "state-province",
           "namePretty": "State province",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/state-province.html",
-          "localPath": "patterns/forms/state-province.html"
+          "localPath": "patterns/forms/state-province.html",
+          "readme": {}
         }
       ],
-      "md": [],
+      "md": [
+        {
+          "name": "readme",
+          "namePretty": "Readme",
+          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/README.md",
+          "localPath": "patterns/forms/README.md"
+        }
+      ],
       "css": [
         {
           "name": "forms",
@@ -898,19 +916,19 @@ const patternManifest_1521429948041 = {
       "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/headers",
       "html": [
         {
-          "name": "header-light",
-          "namePretty": "Header light",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/headers/header-light.html",
-          "localPath": "patterns/headers/header-light.html"
+          "name": "header",
+          "namePretty": "Header",
+          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/headers/header.html",
+          "localPath": "patterns/headers/header.html"
         }
       ],
       "md": [],
       "css": [
         {
-          "name": "headers",
-          "namePretty": "Headers",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/headers/headers.css",
-          "localPath": "patterns/headers/headers.css"
+          "name": "header",
+          "namePretty": "Header",
+          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/headers/header.css",
+          "localPath": "patterns/headers/header.css"
         }
       ]
     },
@@ -918,23 +936,9 @@ const patternManifest_1521429948041 = {
       "name": "navigation",
       "namePretty": "Navigation",
       "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/navigation",
-      "html": [
-        {
-          "name": "anchor-nav",
-          "namePretty": "Anchor nav",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/navigation/anchor-nav.html",
-          "localPath": "patterns/navigation/anchor-nav.html"
-        }
-      ],
+      "html": [],
       "md": [],
-      "css": [
-        {
-          "name": "nav",
-          "namePretty": "Nav",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/navigation/nav.css",
-          "localPath": "patterns/navigation/nav.css"
-        }
-      ]
+      "css": []
     },
     {
       "name": "sections",
@@ -1009,5 +1013,5 @@ const patternManifest_1521429948041 = {
   }
 };
 
-patternBotIncludes(patternManifest_1521429948041);
+patternBotIncludes(patternManifest_1521431168313);
 }());
