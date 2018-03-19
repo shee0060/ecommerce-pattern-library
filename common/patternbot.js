@@ -388,9 +388,9 @@ const patternBotIncludes = function (manifest) {
 /** 
  * Patternbot library manifest
  * /Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library
- * @version 1521431168313
+ * @version 1521432450400
  */
-const patternManifest_1521431168313 = {
+const patternManifest_1521432450400 = {
   "commonInfo": {
     "modulifier": [
       "responsive",
@@ -919,10 +919,18 @@ const patternManifest_1521431168313 = {
           "name": "header",
           "namePretty": "Header",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/headers/header.html",
-          "localPath": "patterns/headers/header.html"
+          "localPath": "patterns/headers/header.html",
+          "readme": {}
         }
       ],
-      "md": [],
+      "md": [
+        {
+          "name": "readme",
+          "namePretty": "Readme",
+          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/headers/README.md",
+          "localPath": "patterns/headers/README.md"
+        }
+      ],
       "css": [
         {
           "name": "header",
@@ -949,40 +957,75 @@ const patternManifest_1521431168313 = {
           "name": "card-dark",
           "namePretty": "Card dark",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections/card-dark.html",
-          "localPath": "patterns/sections/card-dark.html"
+          "localPath": "patterns/sections/card-dark.html",
+          "readme": {
+            "width": 300,
+            "padding": "20px"
+          }
         },
         {
           "name": "card-light",
           "namePretty": "Card light",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections/card-light.html",
-          "localPath": "patterns/sections/card-light.html"
+          "localPath": "patterns/sections/card-light.html",
+          "readme": {
+            "width": 300,
+            "padding": "20px"
+          }
         },
         {
           "name": "card-white",
           "namePretty": "Card white",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections/card-white.html",
-          "localPath": "patterns/sections/card-white.html"
+          "localPath": "patterns/sections/card-white.html",
+          "readme": {
+            "width": 300,
+            "background-color": "--color-primary",
+            "padding": "20px",
+            "backgroundColour": "#021d49",
+            "interfaceColours": {
+              "primary": 255,
+              "opposite": 0
+            }
+          }
         },
         {
           "name": "form-section",
           "namePretty": "Form section",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections/form-section.html",
-          "localPath": "patterns/sections/form-section.html"
+          "localPath": "patterns/sections/form-section.html",
+          "readme": {}
         },
         {
           "name": "text-dark",
           "namePretty": "Text dark",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections/text-dark.html",
-          "localPath": "patterns/sections/text-dark.html"
+          "localPath": "patterns/sections/text-dark.html",
+          "readme": {
+            "background-color": "--color-primary",
+            "backgroundColour": "#021d49",
+            "interfaceColours": {
+              "primary": 255,
+              "opposite": 0
+            }
+          }
         },
         {
           "name": "text-light",
           "namePretty": "Text light",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections/text-light.html",
-          "localPath": "patterns/sections/text-light.html"
+          "localPath": "patterns/sections/text-light.html",
+          "readme": {}
         }
       ],
-      "md": [],
+      "md": [
+        {
+          "name": "readme",
+          "namePretty": "Readme",
+          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections/README.md",
+          "localPath": "patterns/sections/README.md"
+        }
+      ],
       "css": [
         {
           "name": "sections",
@@ -1013,5 +1056,5 @@ const patternManifest_1521431168313 = {
   }
 };
 
-patternBotIncludes(patternManifest_1521431168313);
+patternBotIncludes(patternManifest_1521432450400);
 }());
