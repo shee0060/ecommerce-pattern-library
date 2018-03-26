@@ -22,3 +22,27 @@
   padding-top: 1.5em;
   color: #fff;
 }
+
+#mars:hover {
+  fill: red;
+  transform: scale(1.5);
+}
+
+#mars {
+  transition: all .25s linear;
+  transform-origin: 550px 605px;
+}
+
+#jupiter:hover {
+  fill: orange;
+  transform: scale(1.5);
+}
+
+#jupiter {
+  transition: all .25s linear;
+  transform-origin: 607px 271px;
+}
+
+svg a {
+  cursor: pointer;
+}

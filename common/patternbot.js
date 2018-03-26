@@ -444,9 +444,9 @@ const patternBotIncludes = function (manifest) {
 /** 
  * Patternbot library manifest
  * /Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library
- * @version 787d9bc105c7f846dcfaa0c04a68bdccde543a58
+ * @version c79689e0f1bf9d8798b3238b4d986c67dc75217d
  */
-const patternManifest_787d9bc105c7f846dcfaa0c04a68bdccde543a58 = {
+const patternManifest_c79689e0f1bf9d8798b3238b4d986c67dc75217d = {
   "commonInfo": {
     "modulifier": [
       "responsive",
@@ -1126,6 +1126,13 @@ const patternManifest_787d9bc105c7f846dcfaa0c04a68bdccde543a58 = {
           "readme": {}
         },
         {
+          "name": "space",
+          "namePretty": "Space",
+          "filename": "space",
+          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections/space.html",
+          "localPath": "patterns/sections/space.html"
+        },
+        {
           "name": "text-dark",
           "namePretty": "Text dark",
           "filename": "text-dark",
@@ -1190,5 +1197,5 @@ const patternManifest_787d9bc105c7f846dcfaa0c04a68bdccde543a58 = {
   }
 };
 
-patternBotIncludes(patternManifest_787d9bc105c7f846dcfaa0c04a68bdccde543a58);
+patternBotIncludes(patternManifest_c79689e0f1bf9d8798b3238b4d986c67dc75217d);
 }());
