@@ -12,3 +12,13 @@
   padding-top: 4em;
   color: var(--color-primary);
 }
+
+.light-no-button {
+  padding-top: 1.5em;
+  color: var(--color-primary);
+}
+
+.dark-no-button {
+  padding-top: 1.5em;
+  color: #fff;
+}

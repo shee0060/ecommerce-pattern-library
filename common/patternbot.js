@@ -86,11 +86,17 @@ const patternBotIncludes = function (manifest) {
     `},
   };
 
+  let jsFileQueue = {
+    sync: [],
+    async: [],
+  };
   let downloadedAssets = {};
 
   const downloadHandler = function (e) {
+    const id = (e.target.hasAttribute('src')) ? e.target.getAttribute('src') : e.target.getAttribute('href');
+
     e.target.removeEventListener('load', downloadHandler);
-    downloadedAssets[e.target.getAttribute('href')] = true;
+    downloadedAssets[id] = true;
   };
 
   const findRootPath = function () {
@@ -115,7 +121,7 @@ const patternBotIncludes = function (manifest) {
     newLink.addEventListener('load', downloadHandler);
 
     document.head.appendChild(newLink);
-  }
+  };
 
   const bindAllCssFiles = function (rootPath) {
     if (manifest.commonInfo && manifest.commonInfo.readme && manifest.commonInfo.readme.attributes &&  manifest.commonInfo.readme.attributes.fontUrl) {
@@ -136,6 +142,54 @@ const patternBotIncludes = function (manifest) {
         addCssFile(`../${css.localPath}`);
       });
     });
+  };
+
+  const queueAllJsFiles = function (rootPath) {
+    if (manifest.patternLibFiles && manifest.patternLibFiles.js) {
+      manifest.patternLibFiles.js.forEach((js) => {
+        const href = `..${manifest.config.commonFolder}/${js.filename}`;
+
+        downloadedAssets[href] = false;
+        jsFileQueue.sync.push(href);
+      });
+    }
+
+    manifest.userPatterns.forEach((pattern) => {
+      if (!pattern.js) return;
+
+      pattern.js.forEach((js) => {
+        const href = `../${js.localPath}`;
+
+        downloadedAssets[href] = false;
+        jsFileQueue.async.push(href);
+      });
+    });
+  };
+
+  const addJsFile = function (href) {
+    const newScript = document.createElement('script');
+
+    newScript.setAttribute('src', href);
+    document.body.appendChild(newScript);
+
+    return newScript;
+  };
+
+  const bindNextJsFile = function (e) {
+    if (e && e.target) {
+      e.target.removeEventListener('load', bindNextJsFile);
+      downloadedAssets[e.target.getAttribute('src')] = true;
+    }
+
+    if (jsFileQueue.sync.length > 0) {
+      const scriptTag = addJsFile(jsFileQueue.sync.shift());
+      scriptTag.addEventListener('load', bindNextJsFile);
+    } else {
+      jsFileQueue.async.forEach((js) => {
+        const scriptTag = addJsFile(js);
+        scriptTag.addEventListener('load', downloadHandler);
+      });
+    }
   };
 
   const getPatternInfo = function (patternElem) {
@@ -312,7 +366,7 @@ const patternBotIncludes = function (manifest) {
           if (resp.status >= 200 && resp.status <= 299) {
             return resp.text();
           } else {
-            console.group('Cannot location pattern');
+            console.group('Cannot locate pattern');
             console.log(resp.url);
             console.log(`Error ${resp.status}: ${resp.statusText}`);
             console.groupEnd();
@@ -368,11 +422,13 @@ const patternBotIncludes = function (manifest) {
 
     rootPath = findRootPath();
     bindAllCssFiles(rootPath);
+    queueAllJsFiles(rootPath);
     allPatternTags = findAllPatternTags();
     allPatterns = constructAllPatterns(rootPath, allPatternTags);
 
     loadAllPatterns(allPatterns).then((allLoadedPatterns) => {
       renderAllPatterns(allPatternTags, allLoadedPatterns);
+      bindNextJsFile();
       hideLoadingScreen();
     }).catch((e) => {
       console.group('Pattern load error');
@@ -388,9 +444,9 @@ const patternBotIncludes = function (manifest) {
 /** 
  * Patternbot library manifest
  * /Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library
- * @version 1522071758363
+ * @version 787d9bc105c7f846dcfaa0c04a68bdccde543a58
  */
-const patternManifest_1522071758363 = {
+const patternManifest_787d9bc105c7f846dcfaa0c04a68bdccde543a58 = {
   "commonInfo": {
     "modulifier": [
       "responsive",
@@ -625,7 +681,8 @@ const patternManifest_1522071758363 = {
         "namePretty": "Products",
         "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/pages/products.html"
       }
-    ]
+    ],
+    "js": []
   },
   "userPatterns": [
     {
@@ -636,6 +693,7 @@ const patternManifest_1522071758363 = {
         {
           "name": "hero-banner-dark",
           "namePretty": "Hero banner dark",
+          "filename": "hero-banner-dark",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/banner/hero-banner-dark.html",
           "localPath": "patterns/banner/hero-banner-dark.html",
           "readme": {
@@ -650,6 +708,7 @@ const patternManifest_1522071758363 = {
         {
           "name": "hero-banner-light",
           "namePretty": "Hero banner light",
+          "filename": "hero-banner-light",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/banner/hero-banner-light.html",
           "localPath": "patterns/banner/hero-banner-light.html",
           "readme": {}
@@ -659,6 +718,7 @@ const patternManifest_1522071758363 = {
         {
           "name": "readme",
           "namePretty": "Readme",
+          "filename": "README",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/banner/README.md",
           "localPath": "patterns/banner/README.md"
         }
@@ -667,10 +727,12 @@ const patternManifest_1522071758363 = {
         {
           "name": "banner",
           "namePretty": "Banner",
+          "filename": "banner",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/banner/banner.css",
           "localPath": "patterns/banner/banner.css"
         }
-      ]
+      ],
+      "js": []
     },
     {
       "name": "buttons",
@@ -680,6 +742,7 @@ const patternManifest_1522071758363 = {
         {
           "name": "buttons",
           "namePretty": "Buttons",
+          "filename": "buttons",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/buttons/buttons.html",
           "localPath": "patterns/buttons/buttons.html"
         }
@@ -688,6 +751,7 @@ const patternManifest_1522071758363 = {
         {
           "name": "readme",
           "namePretty": "Readme",
+          "filename": "README",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/buttons/README.md",
           "localPath": "patterns/buttons/README.md"
         }
@@ -696,10 +760,12 @@ const patternManifest_1522071758363 = {
         {
           "name": "buttons",
           "namePretty": "Buttons",
+          "filename": "buttons",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/buttons/buttons.css",
           "localPath": "patterns/buttons/buttons.css"
         }
-      ]
+      ],
+      "js": []
     },
     {
       "name": "cards",
@@ -709,6 +775,7 @@ const patternManifest_1522071758363 = {
         {
           "name": "no-button-dark",
           "namePretty": "No button dark",
+          "filename": "no-button-dark",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards/no-button-dark.html",
           "localPath": "patterns/cards/no-button-dark.html",
           "readme": {
@@ -718,6 +785,7 @@ const patternManifest_1522071758363 = {
         {
           "name": "no-button-light",
           "namePretty": "No button light",
+          "filename": "no-button-light",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards/no-button-light.html",
           "localPath": "patterns/cards/no-button-light.html",
           "readme": {
@@ -727,6 +795,7 @@ const patternManifest_1522071758363 = {
         {
           "name": "no-button-white",
           "namePretty": "No button white",
+          "filename": "no-button-white",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards/no-button-white.html",
           "localPath": "patterns/cards/no-button-white.html",
           "readme": {
@@ -743,6 +812,7 @@ const patternManifest_1522071758363 = {
         {
           "name": "single-card-dark",
           "namePretty": "Single card dark",
+          "filename": "single-card-dark",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards/single-card-dark.html",
           "localPath": "patterns/cards/single-card-dark.html",
           "readme": {
@@ -752,6 +822,7 @@ const patternManifest_1522071758363 = {
         {
           "name": "single-card-light",
           "namePretty": "Single card light",
+          "filename": "single-card-light",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards/single-card-light.html",
           "localPath": "patterns/cards/single-card-light.html",
           "readme": {
@@ -761,6 +832,7 @@ const patternManifest_1522071758363 = {
         {
           "name": "single-card-white",
           "namePretty": "Single card white",
+          "filename": "single-card-white",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards/single-card-white.html",
           "localPath": "patterns/cards/single-card-white.html",
           "readme": {
@@ -779,6 +851,7 @@ const patternManifest_1522071758363 = {
         {
           "name": "readme",
           "namePretty": "Readme",
+          "filename": "README",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards/README.md",
           "localPath": "patterns/cards/README.md"
         }
@@ -787,10 +860,12 @@ const patternManifest_1522071758363 = {
         {
           "name": "cards",
           "namePretty": "Cards",
+          "filename": "cards",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards/cards.css",
           "localPath": "patterns/cards/cards.css"
         }
-      ]
+      ],
+      "js": []
     },
     {
       "name": "footers",
@@ -800,6 +875,7 @@ const patternManifest_1522071758363 = {
         {
           "name": "footer",
           "namePretty": "Footer",
+          "filename": "footer",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/footers/footer.html",
           "localPath": "patterns/footers/footer.html",
           "readme": {}
@@ -809,6 +885,7 @@ const patternManifest_1522071758363 = {
         {
           "name": "readme",
           "namePretty": "Readme",
+          "filename": "README",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/footers/README.md",
           "localPath": "patterns/footers/README.md"
         }
@@ -817,10 +894,12 @@ const patternManifest_1522071758363 = {
         {
           "name": "footer",
           "namePretty": "Footer",
+          "filename": "footer",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/footers/footer.css",
           "localPath": "patterns/footers/footer.css"
         }
-      ]
+      ],
+      "js": []
     },
     {
       "name": "forms",
@@ -830,6 +909,7 @@ const patternManifest_1522071758363 = {
         {
           "name": "citizenship",
           "namePretty": "Citizenship",
+          "filename": "citizenship",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/citizenship.html",
           "localPath": "patterns/forms/citizenship.html",
           "readme": {}
@@ -837,6 +917,7 @@ const patternManifest_1522071758363 = {
         {
           "name": "dob",
           "namePretty": "Dob",
+          "filename": "dob",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/dob.html",
           "localPath": "patterns/forms/dob.html",
           "readme": {}
@@ -844,6 +925,7 @@ const patternManifest_1522071758363 = {
         {
           "name": "email",
           "namePretty": "Email",
+          "filename": "email",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/email.html",
           "localPath": "patterns/forms/email.html",
           "readme": {}
@@ -851,6 +933,7 @@ const patternManifest_1522071758363 = {
         {
           "name": "gender",
           "namePretty": "Gender",
+          "filename": "gender",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/gender.html",
           "localPath": "patterns/forms/gender.html",
           "readme": {}
@@ -858,6 +941,7 @@ const patternManifest_1522071758363 = {
         {
           "name": "group-info",
           "namePretty": "Group info",
+          "filename": "group-info",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/group-info.html",
           "localPath": "patterns/forms/group-info.html",
           "readme": {}
@@ -865,6 +949,7 @@ const patternManifest_1522071758363 = {
         {
           "name": "location",
           "namePretty": "Location",
+          "filename": "location",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/location.html",
           "localPath": "patterns/forms/location.html",
           "readme": {}
@@ -872,6 +957,7 @@ const patternManifest_1522071758363 = {
         {
           "name": "names",
           "namePretty": "Names",
+          "filename": "names",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/names.html",
           "localPath": "patterns/forms/names.html",
           "readme": {}
@@ -879,6 +965,7 @@ const patternManifest_1522071758363 = {
         {
           "name": "phone",
           "namePretty": "Phone",
+          "filename": "phone",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/phone.html",
           "localPath": "patterns/forms/phone.html",
           "readme": {}
@@ -886,6 +973,7 @@ const patternManifest_1522071758363 = {
         {
           "name": "room",
           "namePretty": "Room",
+          "filename": "room",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/room.html",
           "localPath": "patterns/forms/room.html",
           "readme": {}
@@ -893,6 +981,7 @@ const patternManifest_1522071758363 = {
         {
           "name": "state-province",
           "namePretty": "State province",
+          "filename": "state-province",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/state-province.html",
           "localPath": "patterns/forms/state-province.html",
           "readme": {}
@@ -902,6 +991,7 @@ const patternManifest_1522071758363 = {
         {
           "name": "readme",
           "namePretty": "Readme",
+          "filename": "README",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/README.md",
           "localPath": "patterns/forms/README.md"
         }
@@ -910,10 +1000,12 @@ const patternManifest_1522071758363 = {
         {
           "name": "forms",
           "namePretty": "Forms",
+          "filename": "forms",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/forms.css",
           "localPath": "patterns/forms/forms.css"
         }
-      ]
+      ],
+      "js": []
     },
     {
       "name": "headers",
@@ -923,6 +1015,7 @@ const patternManifest_1522071758363 = {
         {
           "name": "header",
           "namePretty": "Header",
+          "filename": "header",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/headers/header.html",
           "localPath": "patterns/headers/header.html",
           "readme": {}
@@ -932,6 +1025,7 @@ const patternManifest_1522071758363 = {
         {
           "name": "readme",
           "namePretty": "Readme",
+          "filename": "README",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/headers/README.md",
           "localPath": "patterns/headers/README.md"
         }
@@ -940,10 +1034,12 @@ const patternManifest_1522071758363 = {
         {
           "name": "header",
           "namePretty": "Header",
+          "filename": "header",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/headers/header.css",
           "localPath": "patterns/headers/header.css"
         }
-      ]
+      ],
+      "js": []
     },
     {
       "name": "navigation",
@@ -953,6 +1049,7 @@ const patternManifest_1522071758363 = {
         {
           "name": "navigation",
           "namePretty": "Navigation",
+          "filename": "navigation",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/navigation/navigation.html",
           "localPath": "patterns/navigation/navigation.html"
         }
@@ -962,10 +1059,12 @@ const patternManifest_1522071758363 = {
         {
           "name": "navigation",
           "namePretty": "Navigation",
+          "filename": "navigation",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/navigation/navigation.css",
           "localPath": "patterns/navigation/navigation.css"
         }
-      ]
+      ],
+      "js": []
     },
     {
       "name": "sections",
@@ -975,6 +1074,7 @@ const patternManifest_1522071758363 = {
         {
           "name": "card-dark",
           "namePretty": "Card dark",
+          "filename": "card-dark",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections/card-dark.html",
           "localPath": "patterns/sections/card-dark.html",
           "readme": {
@@ -985,6 +1085,7 @@ const patternManifest_1522071758363 = {
         {
           "name": "card-light",
           "namePretty": "Card light",
+          "filename": "card-light",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections/card-light.html",
           "localPath": "patterns/sections/card-light.html",
           "readme": {
@@ -993,8 +1094,16 @@ const patternManifest_1522071758363 = {
           }
         },
         {
+          "name": "card-no-button-white",
+          "namePretty": "Card no button white",
+          "filename": "card-no-button-white",
+          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections/card-no-button-white.html",
+          "localPath": "patterns/sections/card-no-button-white.html"
+        },
+        {
           "name": "card-white",
           "namePretty": "Card white",
+          "filename": "card-white",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections/card-white.html",
           "localPath": "patterns/sections/card-white.html",
           "readme": {
@@ -1011,6 +1120,7 @@ const patternManifest_1522071758363 = {
         {
           "name": "form-section",
           "namePretty": "Form section",
+          "filename": "form-section",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections/form-section.html",
           "localPath": "patterns/sections/form-section.html",
           "readme": {}
@@ -1018,6 +1128,7 @@ const patternManifest_1522071758363 = {
         {
           "name": "text-dark",
           "namePretty": "Text dark",
+          "filename": "text-dark",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections/text-dark.html",
           "localPath": "patterns/sections/text-dark.html",
           "readme": {
@@ -1032,6 +1143,7 @@ const patternManifest_1522071758363 = {
         {
           "name": "text-light",
           "namePretty": "Text light",
+          "filename": "text-light",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections/text-light.html",
           "localPath": "patterns/sections/text-light.html",
           "readme": {}
@@ -1041,6 +1153,7 @@ const patternManifest_1522071758363 = {
         {
           "name": "readme",
           "namePretty": "Readme",
+          "filename": "README",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections/README.md",
           "localPath": "patterns/sections/README.md"
         }
@@ -1049,10 +1162,12 @@ const patternManifest_1522071758363 = {
         {
           "name": "sections",
           "namePretty": "Sections",
+          "filename": "sections",
           "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections/sections.css",
           "localPath": "patterns/sections/sections.css"
         }
-      ]
+      ],
+      "js": []
     }
   ],
   "config": {
@@ -1075,5 +1190,5 @@ const patternManifest_1522071758363 = {
   }
 };
 
-patternBotIncludes(patternManifest_1522071758363);
+patternBotIncludes(patternManifest_787d9bc105c7f846dcfaa0c04a68bdccde543a58);
 }());

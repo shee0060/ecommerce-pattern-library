@@ -27,3 +27,7 @@ ul, li, ol, dl, dt, dd {
 mark {
   background-color: var(--color-accent-light);
 }
+
+.dark-background {
+  background-color: var(--color-primary);
+}
