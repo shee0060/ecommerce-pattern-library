@@ -24,7 +24,7 @@
 }
 
 #mars:hover {
-  fill: red;
+  fill: #ff7d50;
   transform: scale(1.5);
 }
 
@@ -34,13 +34,23 @@
 }
 
 #jupiter:hover {
-  fill: orange;
+  fill: #f9ad26;
   transform: scale(1.5);
 }
 
 #jupiter {
   transition: all .25s linear;
   transform-origin: 607px 271px;
+}
+
+#saturn:hover {
+  fill: #fcdf65;
+  transform: scale(1.5);
+}
+
+#saturn {
+  transition: all .25s linear;
+  transform-origin: 1011px 348px;
 }
 
 svg a {
