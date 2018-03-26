@@ -53,6 +53,16 @@
   transform-origin: 1011px 348px;
 }
 
+#neptune:hover {
+  fill: #12a1f9;
+  transform: scale(1.5);
+}
+
+#neptune {
+  transition: all .25s linear;
+  transform-origin: 1231px 674px;
+}
+
 svg a {
   cursor: pointer;
 }
