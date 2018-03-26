@@ -388,9 +388,9 @@ const patternBotIncludes = function (manifest) {
 /** 
  * Patternbot library manifest
  * /Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library
- * @version 1521432450400
+ * @version 1522070646237
  */
-const patternManifest_1521432450400 = {
+const patternManifest_1522070646236 = {
   "commonInfo": {
     "modulifier": [
       "responsive",
@@ -619,6 +619,11 @@ const patternManifest_1521432450400 = {
         "name": "home.html",
         "namePretty": "Home",
         "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/pages/home.html"
+      },
+      {
+        "name": "products.html",
+        "namePretty": "Products",
+        "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/pages/products.html"
       }
     ]
   },
@@ -944,9 +949,23 @@ const patternManifest_1521432450400 = {
       "name": "navigation",
       "namePretty": "Navigation",
       "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/navigation",
-      "html": [],
+      "html": [
+        {
+          "name": "navigation",
+          "namePretty": "Navigation",
+          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/navigation/navigation.html",
+          "localPath": "patterns/navigation/navigation.html"
+        }
+      ],
       "md": [],
-      "css": []
+      "css": [
+        {
+          "name": "navigation",
+          "namePretty": "Navigation",
+          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/navigation/navigation.css",
+          "localPath": "patterns/navigation/navigation.css"
+        }
+      ]
     },
     {
       "name": "sections",
@@ -1056,5 +1075,5 @@ const patternManifest_1521432450400 = {
   }
 };
 
-patternBotIncludes(patternManifest_1521432450400);
+patternBotIncludes(patternManifest_1522070646236);
 }());

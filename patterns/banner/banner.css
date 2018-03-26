@@ -9,7 +9,7 @@
 }
 
 .hero-text-dark {
-  padding-top: 4em;
+  padding-top: 6.5em;
   color: #fff;
 }
 
@@ -19,6 +19,6 @@
 }
 
 .hero-text-light {
-  padding-top: 4em;
+  padding-top: 6.5em;
   color: var(--color-primary);
 }

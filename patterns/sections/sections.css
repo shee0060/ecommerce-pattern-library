@@ -4,9 +4,11 @@
 }
 
 .dark {
+  padding-top: 4em;
   color: #fff;
 }
 
 .light {
+  padding-top: 4em;
   color: var(--color-primary);
 }

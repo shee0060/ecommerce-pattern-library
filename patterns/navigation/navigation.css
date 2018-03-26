@@ -1,0 +1,7 @@
+.page-link {
+  color: #fff;
+  background-color: var(--color-primary);
+  padding: 15px;
+  border-radius: 25px;
+  text-decoration: none;
+}
