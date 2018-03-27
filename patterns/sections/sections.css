@@ -23,6 +23,46 @@
   color: #fff;
 }
 
+#mercury:hover {
+  fill: #748991;
+  transform: scale(1.5);
+}
+
+#mercury {
+  transition: all .25s linear;
+  transform-origin: 95px 713px;
+}
+
+#venus:hover {
+  fill: #f4be14;
+  transform: scale(1.5);
+}
+
+#venus {
+  transition: all .25s linear;
+  transform-origin: 262px 765px;
+}
+
+#earth:hover {
+  fill: #3bdbc7;
+  transform: scale(1.5);
+}
+
+#earth {
+  transition: all .25s linear;
+  transform-origin: 245px 523px;
+}
+
+#moon:hover {
+  fill: #adb6c4;
+  transform: scale(1.5);
+}
+
+#moon {
+  transition: all .25s linear;
+  transform-origin: 359px 475px;
+}
+
 #mars:hover {
   fill: #ff7d50;
   transform: scale(1.5);
@@ -35,7 +75,7 @@
 
 #jupiter:hover {
   fill: #f9ad26;
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 
 #jupiter {
@@ -45,7 +85,7 @@
 
 #saturn:hover {
   fill: #fcdf65;
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 
 #saturn {
@@ -55,12 +95,22 @@
 
 #neptune:hover {
   fill: #12a1f9;
-  transform: scale(1.5);
+  transform: scale(1.3);
 }
 
 #neptune {
   transition: all .25s linear;
   transform-origin: 1231px 674px;
+}
+
+#uranus:hover {
+  fill: #13e0ea;
+  transform: scale(1.3);
+}
+
+#uranus {
+  transition: all .25s linear;
+  transform-origin: 1464px 256px;
 }
 
 svg a {
