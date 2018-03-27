@@ -5,11 +5,10 @@
 
 .dark-text {
   color: #fff;
-  background-color: var(--color-primary);
+  background-color: var(--color-primary-light);
 }
 
 .hero-text-dark {
-  padding-top: 6.5em;
   color: #fff;
 }
 
@@ -19,6 +18,10 @@
 }
 
 .hero-text-light {
-  padding-top: 6.5em;
   color: var(--color-primary);
+}
+
+.text-box {
+  opacity: 1;
+  background-color: var(--color-primary-light);
 }
