@@ -444,9 +444,9 @@ const patternBotIncludes = function (manifest) {
 /** 
  * Patternbot library manifest
  * /Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library
- * @version c79689e0f1bf9d8798b3238b4d986c67dc75217d
+ * @version 06da4d6a1864a37f66209118d14e027e95e26632
  */
-const patternManifest_c79689e0f1bf9d8798b3238b4d986c67dc75217d = {
+const patternManifest_06da4d6a1864a37f66209118d14e027e95e26632 = {
   "commonInfo": {
     "modulifier": [
       "responsive",
@@ -671,6 +671,11 @@ const patternManifest_c79689e0f1bf9d8798b3238b4d986c67dc75217d = {
       "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections"
     ],
     "pages": [
+      {
+        "name": "check-out.html",
+        "namePretty": "Check out",
+        "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/pages/check-out.html"
+      },
       {
         "name": "home.html",
         "namePretty": "Home",
@@ -1197,5 +1202,5 @@ const patternManifest_c79689e0f1bf9d8798b3238b4d986c67dc75217d = {
   }
 };
 
-patternBotIncludes(patternManifest_c79689e0f1bf9d8798b3238b4d986c67dc75217d);
+patternBotIncludes(patternManifest_06da4d6a1864a37f66209118d14e027e95e26632);
 }());

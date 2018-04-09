@@ -1,3 +1,7 @@
 .nav-footer {
   background-color: var(--color-primary);
 }
+
+.copyright {
+  color: #fff;
+}
