@@ -9,7 +9,52 @@
 <body>
 
   <script type="application/json" data-pattern="headers/header"></script>
-  <script type="application/json" data-pattern="banner/hero-banner-dark"></script>
+  <script type="application/json" data-pattern="banner/hero-banner-dark">
+    {
+      "h1": "Mars"
+    }
+  </script>
+
+  <main class="pad-t-2">
+    <h2 class="text-center">EXCURSIONS</H2>
+
+      <div class="grid">
+
+        <div class="gutter-2 pad-t-2 pad-b-2 unit xs-1 s-1 m-1-2 l-1-2">
+          <script type="application/json" data-pattern="cards/single-card-light">
+            {
+              "use[xlink:href]": "../images/icons.svg#flying",
+              "h4": "Mars"
+            }
+          </script>
+        </div>
+        <div class="gutter-2 pad-t-2 pad-b-2 unit xs-1 s-1 m-1-2 l-1-2">
+          <script type="application/json" data-pattern="cards/single-card-light"></script>
+        </div>
+        <div class="gutter-2 pad-t-2 pad-b-2 unit xs-1 s-1 m-1-2 l-1-2">
+          <script type="application/json" data-pattern="cards/single-card-light"></script>
+        </div>
+        <div class="gutter-2 pad-t-2 pad-b-2 unit xs-1 s-1 m-1-2 l-1-2">
+          <script type="application/json" data-pattern="cards/single-card-light"></script>
+        </div>
+
+      </div>
+
+      <script type="application/json" data-pattern="sections/text-dark"></script>
+
+      <div class="grid">
+
+        <div class="gutter-2 pad-t-2 pad-b-2 unit xs-1 s-1 m-1-2 l-1-2">
+          <script type="application/json" data-pattern="cards/single-card-light"></script>
+        </div>
+        <div class="gutter-2 pad-t-2 pad-b-2 unit xs-1 s-1 m-1-2 l-1-2">
+          <script type="application/json" data-pattern="cards/single-card-light"></script>
+        </div>
+      </div>
+
+  </main>
+
+  <script type="application/json" data-pattern="footers/footer"></script>
 
 </body>
 </html>
