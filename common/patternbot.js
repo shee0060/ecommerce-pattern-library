@@ -443,10 +443,10 @@ const patternBotIncludes = function (manifest) {
 
 /** 
  * Patternbot library manifest
- * /Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library
- * @version 06da4d6a1864a37f66209118d14e027e95e26632
+ * /Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library
+ * @version be0686f05fbc1dfc0c6c7ce8022e1db8401a0ea8
  */
-const patternManifest_06da4d6a1864a37f66209118d14e027e95e26632 = {
+const patternManifest_be0686f05fbc1dfc0c6c7ce8022e1db8401a0ea8 = {
   "commonInfo": {
     "modulifier": [
       "responsive",
@@ -645,46 +645,46 @@ const patternManifest_06da4d6a1864a37f66209118d14e027e95e26632 = {
   },
   "patternLibFiles": {
     "commonParsable": {
-      "gridifier": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/common/grid.css",
-      "typografier": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/common/type.css",
-      "modulifier": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/common/modules.css",
-      "theme": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/common/theme.css"
+      "gridifier": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/common/grid.css",
+      "typografier": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/common/type.css",
+      "modulifier": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/common/modules.css",
+      "theme": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/common/theme.css"
     },
     "imagesParsable": {
-      "icons": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/images/icons.svg"
+      "icons": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/images/icons.svg"
     },
     "logos": {
-      "sizeLarge": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/images/logo.svg",
+      "sizeLarge": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/images/logo.svg",
       "size64": false,
       "size32": false,
       "size16": false,
       "sizeLargeLocal": "logo.svg"
     },
     "patterns": [
-      "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/banner",
-      "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/buttons",
-      "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards",
-      "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/footers",
-      "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms",
-      "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/headers",
-      "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/navigation",
-      "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections"
+      "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/banner",
+      "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/buttons",
+      "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards",
+      "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/footers",
+      "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms",
+      "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/headers",
+      "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/navigation",
+      "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections"
     ],
     "pages": [
       {
         "name": "check-out.html",
         "namePretty": "Check out",
-        "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/pages/check-out.html"
+        "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/pages/check-out.html"
       },
       {
         "name": "home.html",
         "namePretty": "Home",
-        "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/pages/home.html"
+        "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/pages/home.html"
       },
       {
         "name": "products.html",
         "namePretty": "Products",
-        "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/pages/products.html"
+        "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/pages/products.html"
       }
     ],
     "js": []
@@ -693,13 +693,13 @@ const patternManifest_06da4d6a1864a37f66209118d14e027e95e26632 = {
     {
       "name": "banner",
       "namePretty": "Banner",
-      "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/banner",
+      "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/banner",
       "html": [
         {
           "name": "hero-banner-dark",
           "namePretty": "Hero banner dark",
           "filename": "hero-banner-dark",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/banner/hero-banner-dark.html",
+          "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/banner/hero-banner-dark.html",
           "localPath": "patterns/banner/hero-banner-dark.html",
           "readme": {
             "background-color": "--color-primary",
@@ -714,7 +714,7 @@ const patternManifest_06da4d6a1864a37f66209118d14e027e95e26632 = {
           "name": "hero-banner-light",
           "namePretty": "Hero banner light",
           "filename": "hero-banner-light",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/banner/hero-banner-light.html",
+          "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/banner/hero-banner-light.html",
           "localPath": "patterns/banner/hero-banner-light.html",
           "readme": {}
         }
@@ -724,7 +724,7 @@ const patternManifest_06da4d6a1864a37f66209118d14e027e95e26632 = {
           "name": "readme",
           "namePretty": "Readme",
           "filename": "README",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/banner/README.md",
+          "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/banner/README.md",
           "localPath": "patterns/banner/README.md"
         }
       ],
@@ -733,7 +733,7 @@ const patternManifest_06da4d6a1864a37f66209118d14e027e95e26632 = {
           "name": "banner",
           "namePretty": "Banner",
           "filename": "banner",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/banner/banner.css",
+          "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/banner/banner.css",
           "localPath": "patterns/banner/banner.css"
         }
       ],
@@ -742,13 +742,13 @@ const patternManifest_06da4d6a1864a37f66209118d14e027e95e26632 = {
     {
       "name": "buttons",
       "namePretty": "Buttons",
-      "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/buttons",
+      "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/buttons",
       "html": [
         {
           "name": "buttons",
           "namePretty": "Buttons",
           "filename": "buttons",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/buttons/buttons.html",
+          "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/buttons/buttons.html",
           "localPath": "patterns/buttons/buttons.html"
         }
       ],
@@ -757,7 +757,7 @@ const patternManifest_06da4d6a1864a37f66209118d14e027e95e26632 = {
           "name": "readme",
           "namePretty": "Readme",
           "filename": "README",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/buttons/README.md",
+          "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/buttons/README.md",
           "localPath": "patterns/buttons/README.md"
         }
       ],
@@ -766,7 +766,7 @@ const patternManifest_06da4d6a1864a37f66209118d14e027e95e26632 = {
           "name": "buttons",
           "namePretty": "Buttons",
           "filename": "buttons",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/buttons/buttons.css",
+          "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/buttons/buttons.css",
           "localPath": "patterns/buttons/buttons.css"
         }
       ],
@@ -775,13 +775,13 @@ const patternManifest_06da4d6a1864a37f66209118d14e027e95e26632 = {
     {
       "name": "cards",
       "namePretty": "Cards",
-      "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards",
+      "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards",
       "html": [
         {
           "name": "no-button-dark",
           "namePretty": "No button dark",
           "filename": "no-button-dark",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards/no-button-dark.html",
+          "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards/no-button-dark.html",
           "localPath": "patterns/cards/no-button-dark.html",
           "readme": {
             "width": 300
@@ -791,7 +791,7 @@ const patternManifest_06da4d6a1864a37f66209118d14e027e95e26632 = {
           "name": "no-button-light",
           "namePretty": "No button light",
           "filename": "no-button-light",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards/no-button-light.html",
+          "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards/no-button-light.html",
           "localPath": "patterns/cards/no-button-light.html",
           "readme": {
             "width": 300
@@ -801,7 +801,7 @@ const patternManifest_06da4d6a1864a37f66209118d14e027e95e26632 = {
           "name": "no-button-white",
           "namePretty": "No button white",
           "filename": "no-button-white",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards/no-button-white.html",
+          "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards/no-button-white.html",
           "localPath": "patterns/cards/no-button-white.html",
           "readme": {
             "width": 300,
@@ -818,7 +818,7 @@ const patternManifest_06da4d6a1864a37f66209118d14e027e95e26632 = {
           "name": "single-card-dark",
           "namePretty": "Single card dark",
           "filename": "single-card-dark",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards/single-card-dark.html",
+          "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards/single-card-dark.html",
           "localPath": "patterns/cards/single-card-dark.html",
           "readme": {
             "width": 300
@@ -828,7 +828,7 @@ const patternManifest_06da4d6a1864a37f66209118d14e027e95e26632 = {
           "name": "single-card-light",
           "namePretty": "Single card light",
           "filename": "single-card-light",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards/single-card-light.html",
+          "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards/single-card-light.html",
           "localPath": "patterns/cards/single-card-light.html",
           "readme": {
             "width": 300
@@ -838,7 +838,7 @@ const patternManifest_06da4d6a1864a37f66209118d14e027e95e26632 = {
           "name": "single-card-white",
           "namePretty": "Single card white",
           "filename": "single-card-white",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards/single-card-white.html",
+          "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards/single-card-white.html",
           "localPath": "patterns/cards/single-card-white.html",
           "readme": {
             "width": 300,
@@ -857,7 +857,7 @@ const patternManifest_06da4d6a1864a37f66209118d14e027e95e26632 = {
           "name": "readme",
           "namePretty": "Readme",
           "filename": "README",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards/README.md",
+          "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards/README.md",
           "localPath": "patterns/cards/README.md"
         }
       ],
@@ -866,7 +866,7 @@ const patternManifest_06da4d6a1864a37f66209118d14e027e95e26632 = {
           "name": "cards",
           "namePretty": "Cards",
           "filename": "cards",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards/cards.css",
+          "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/cards/cards.css",
           "localPath": "patterns/cards/cards.css"
         }
       ],
@@ -875,13 +875,13 @@ const patternManifest_06da4d6a1864a37f66209118d14e027e95e26632 = {
     {
       "name": "footers",
       "namePretty": "Footers",
-      "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/footers",
+      "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/footers",
       "html": [
         {
           "name": "footer",
           "namePretty": "Footer",
           "filename": "footer",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/footers/footer.html",
+          "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/footers/footer.html",
           "localPath": "patterns/footers/footer.html",
           "readme": {}
         }
@@ -891,7 +891,7 @@ const patternManifest_06da4d6a1864a37f66209118d14e027e95e26632 = {
           "name": "readme",
           "namePretty": "Readme",
           "filename": "README",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/footers/README.md",
+          "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/footers/README.md",
           "localPath": "patterns/footers/README.md"
         }
       ],
@@ -900,7 +900,7 @@ const patternManifest_06da4d6a1864a37f66209118d14e027e95e26632 = {
           "name": "footer",
           "namePretty": "Footer",
           "filename": "footer",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/footers/footer.css",
+          "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/footers/footer.css",
           "localPath": "patterns/footers/footer.css"
         }
       ],
@@ -909,13 +909,13 @@ const patternManifest_06da4d6a1864a37f66209118d14e027e95e26632 = {
     {
       "name": "forms",
       "namePretty": "Forms",
-      "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms",
+      "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms",
       "html": [
         {
           "name": "citizenship",
           "namePretty": "Citizenship",
           "filename": "citizenship",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/citizenship.html",
+          "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/citizenship.html",
           "localPath": "patterns/forms/citizenship.html",
           "readme": {}
         },
@@ -923,7 +923,7 @@ const patternManifest_06da4d6a1864a37f66209118d14e027e95e26632 = {
           "name": "dob",
           "namePretty": "Dob",
           "filename": "dob",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/dob.html",
+          "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/dob.html",
           "localPath": "patterns/forms/dob.html",
           "readme": {}
         },
@@ -931,7 +931,7 @@ const patternManifest_06da4d6a1864a37f66209118d14e027e95e26632 = {
           "name": "email",
           "namePretty": "Email",
           "filename": "email",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/email.html",
+          "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/email.html",
           "localPath": "patterns/forms/email.html",
           "readme": {}
         },
@@ -939,7 +939,7 @@ const patternManifest_06da4d6a1864a37f66209118d14e027e95e26632 = {
           "name": "gender",
           "namePretty": "Gender",
           "filename": "gender",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/gender.html",
+          "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/gender.html",
           "localPath": "patterns/forms/gender.html",
           "readme": {}
         },
@@ -947,7 +947,7 @@ const patternManifest_06da4d6a1864a37f66209118d14e027e95e26632 = {
           "name": "group-info",
           "namePretty": "Group info",
           "filename": "group-info",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/group-info.html",
+          "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/group-info.html",
           "localPath": "patterns/forms/group-info.html",
           "readme": {}
         },
@@ -955,7 +955,7 @@ const patternManifest_06da4d6a1864a37f66209118d14e027e95e26632 = {
           "name": "location",
           "namePretty": "Location",
           "filename": "location",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/location.html",
+          "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/location.html",
           "localPath": "patterns/forms/location.html",
           "readme": {}
         },
@@ -963,7 +963,7 @@ const patternManifest_06da4d6a1864a37f66209118d14e027e95e26632 = {
           "name": "names",
           "namePretty": "Names",
           "filename": "names",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/names.html",
+          "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/names.html",
           "localPath": "patterns/forms/names.html",
           "readme": {}
         },
@@ -971,7 +971,7 @@ const patternManifest_06da4d6a1864a37f66209118d14e027e95e26632 = {
           "name": "phone",
           "namePretty": "Phone",
           "filename": "phone",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/phone.html",
+          "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/phone.html",
           "localPath": "patterns/forms/phone.html",
           "readme": {}
         },
@@ -979,7 +979,7 @@ const patternManifest_06da4d6a1864a37f66209118d14e027e95e26632 = {
           "name": "room",
           "namePretty": "Room",
           "filename": "room",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/room.html",
+          "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/room.html",
           "localPath": "patterns/forms/room.html",
           "readme": {}
         },
@@ -987,7 +987,7 @@ const patternManifest_06da4d6a1864a37f66209118d14e027e95e26632 = {
           "name": "state-province",
           "namePretty": "State province",
           "filename": "state-province",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/state-province.html",
+          "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/state-province.html",
           "localPath": "patterns/forms/state-province.html",
           "readme": {}
         }
@@ -997,7 +997,7 @@ const patternManifest_06da4d6a1864a37f66209118d14e027e95e26632 = {
           "name": "readme",
           "namePretty": "Readme",
           "filename": "README",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/README.md",
+          "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/README.md",
           "localPath": "patterns/forms/README.md"
         }
       ],
@@ -1006,7 +1006,7 @@ const patternManifest_06da4d6a1864a37f66209118d14e027e95e26632 = {
           "name": "forms",
           "namePretty": "Forms",
           "filename": "forms",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/forms.css",
+          "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/forms/forms.css",
           "localPath": "patterns/forms/forms.css"
         }
       ],
@@ -1015,13 +1015,13 @@ const patternManifest_06da4d6a1864a37f66209118d14e027e95e26632 = {
     {
       "name": "headers",
       "namePretty": "Headers",
-      "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/headers",
+      "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/headers",
       "html": [
         {
           "name": "header",
           "namePretty": "Header",
           "filename": "header",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/headers/header.html",
+          "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/headers/header.html",
           "localPath": "patterns/headers/header.html",
           "readme": {}
         }
@@ -1031,7 +1031,7 @@ const patternManifest_06da4d6a1864a37f66209118d14e027e95e26632 = {
           "name": "readme",
           "namePretty": "Readme",
           "filename": "README",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/headers/README.md",
+          "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/headers/README.md",
           "localPath": "patterns/headers/README.md"
         }
       ],
@@ -1040,7 +1040,7 @@ const patternManifest_06da4d6a1864a37f66209118d14e027e95e26632 = {
           "name": "header",
           "namePretty": "Header",
           "filename": "header",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/headers/header.css",
+          "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/headers/header.css",
           "localPath": "patterns/headers/header.css"
         }
       ],
@@ -1049,13 +1049,13 @@ const patternManifest_06da4d6a1864a37f66209118d14e027e95e26632 = {
     {
       "name": "navigation",
       "namePretty": "Navigation",
-      "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/navigation",
+      "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/navigation",
       "html": [
         {
           "name": "navigation",
           "namePretty": "Navigation",
           "filename": "navigation",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/navigation/navigation.html",
+          "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/navigation/navigation.html",
           "localPath": "patterns/navigation/navigation.html"
         }
       ],
@@ -1065,7 +1065,7 @@ const patternManifest_06da4d6a1864a37f66209118d14e027e95e26632 = {
           "name": "navigation",
           "namePretty": "Navigation",
           "filename": "navigation",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/navigation/navigation.css",
+          "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/navigation/navigation.css",
           "localPath": "patterns/navigation/navigation.css"
         }
       ],
@@ -1074,13 +1074,13 @@ const patternManifest_06da4d6a1864a37f66209118d14e027e95e26632 = {
     {
       "name": "sections",
       "namePretty": "Sections",
-      "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections",
+      "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections",
       "html": [
         {
           "name": "card-dark",
           "namePretty": "Card dark",
           "filename": "card-dark",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections/card-dark.html",
+          "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections/card-dark.html",
           "localPath": "patterns/sections/card-dark.html",
           "readme": {
             "width": 300,
@@ -1091,7 +1091,7 @@ const patternManifest_06da4d6a1864a37f66209118d14e027e95e26632 = {
           "name": "card-light",
           "namePretty": "Card light",
           "filename": "card-light",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections/card-light.html",
+          "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections/card-light.html",
           "localPath": "patterns/sections/card-light.html",
           "readme": {
             "width": 300,
@@ -1102,14 +1102,14 @@ const patternManifest_06da4d6a1864a37f66209118d14e027e95e26632 = {
           "name": "card-no-button-white",
           "namePretty": "Card no button white",
           "filename": "card-no-button-white",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections/card-no-button-white.html",
+          "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections/card-no-button-white.html",
           "localPath": "patterns/sections/card-no-button-white.html"
         },
         {
           "name": "card-white",
           "namePretty": "Card white",
           "filename": "card-white",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections/card-white.html",
+          "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections/card-white.html",
           "localPath": "patterns/sections/card-white.html",
           "readme": {
             "width": 300,
@@ -1126,7 +1126,7 @@ const patternManifest_06da4d6a1864a37f66209118d14e027e95e26632 = {
           "name": "form-section",
           "namePretty": "Form section",
           "filename": "form-section",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections/form-section.html",
+          "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections/form-section.html",
           "localPath": "patterns/sections/form-section.html",
           "readme": {}
         },
@@ -1134,14 +1134,14 @@ const patternManifest_06da4d6a1864a37f66209118d14e027e95e26632 = {
           "name": "space",
           "namePretty": "Space",
           "filename": "space",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections/space.html",
+          "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections/space.html",
           "localPath": "patterns/sections/space.html"
         },
         {
           "name": "text-dark",
           "namePretty": "Text dark",
           "filename": "text-dark",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections/text-dark.html",
+          "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections/text-dark.html",
           "localPath": "patterns/sections/text-dark.html",
           "readme": {
             "background-color": "--color-primary",
@@ -1156,7 +1156,7 @@ const patternManifest_06da4d6a1864a37f66209118d14e027e95e26632 = {
           "name": "text-light",
           "namePretty": "Text light",
           "filename": "text-light",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections/text-light.html",
+          "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections/text-light.html",
           "localPath": "patterns/sections/text-light.html",
           "readme": {}
         }
@@ -1166,7 +1166,7 @@ const patternManifest_06da4d6a1864a37f66209118d14e027e95e26632 = {
           "name": "readme",
           "namePretty": "Readme",
           "filename": "README",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections/README.md",
+          "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections/README.md",
           "localPath": "patterns/sections/README.md"
         }
       ],
@@ -1175,7 +1175,7 @@ const patternManifest_06da4d6a1864a37f66209118d14e027e95e26632 = {
           "name": "sections",
           "namePretty": "Sections",
           "filename": "sections",
-          "path": "/Users/Tori/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections/sections.css",
+          "path": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/sections/sections.css",
           "localPath": "patterns/sections/sections.css"
         }
       ],
@@ -1202,5 +1202,5 @@ const patternManifest_06da4d6a1864a37f66209118d14e027e95e26632 = {
   }
 };
 
-patternBotIncludes(patternManifest_06da4d6a1864a37f66209118d14e027e95e26632);
+patternBotIncludes(patternManifest_be0686f05fbc1dfc0c6c7ce8022e1db8401a0ea8);
 }());
