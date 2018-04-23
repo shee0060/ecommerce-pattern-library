@@ -4,9 +4,15 @@
   <meta charset="utf-8">
   <title>Orion Exploration</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="favicon.ico" rel="shortcut icon">
+  <link rel="apple-touch-icon" href="favicon-32.png">
   <script src="../common/patternbot.js"></script>
 </head>
 <body>
+  <ul class="skip-links">
+    <li><a href="#main">Jump to main content</a></li>
+    <li><a href="#nav">Jump to navigation</a></li>
+  </ul>
   <script type="application/json" data-pattern="headers/header"></script>
   <script type="application/json" data-pattern="banner/hero-banner-dark">
     {
@@ -15,78 +21,80 @@
       "p": "Orion exploration offers high quality luxury vacations to destinations around our solar system and beyond."
     }
   </script>
-  <h2 class="pad-t tera text-center">Featured Flights</h2>
-  <div class="grid">
-    <div class="pad-t gutter-2 unit xs-1 s-1 m-1-2 l-1-3 xl-1-3">
-      <script type="application/json" data-pattern="cards/single-card-dark">
-        {
-          "use[xlink:href]": "../images/icons.svg#mars",
-          "h4": "Mars",
-          "p": "",
-          ".btn": "$4980"
-        }
-      </script>
+  <main role="main" id="main" tabindex="0">
+    <h2 class="pad-t tera text-center">Featured Flights</h2>
+    <div class="grid">
+      <div class="pad-t gutter-2 unit xs-1 s-1 m-1-2 l-1-3 xl-1-3">
+        <script type="application/json" data-pattern="cards/single-card-dark">
+          {
+            "use[xlink:href]": "../images/icons.svg#mars",
+            "h4": "Mars",
+            "p": "",
+            ".btn": "$4980"
+          }
+        </script>
+      </div>
+      <div class="pad-t gutter-2 unit xs-1 s-1 m-1-2 l-1-3 xl-1-3">
+        <script type="application/json" data-pattern="cards/single-card-dark">
+          {
+            "use[xlink:href]": "../images/icons.svg#jupiter",
+            "h4": "Jupiter",
+            "p": "",
+            ".btn": "$8487"
+          }
+        </script>
+      </div>
+      <div class="pad-t gutter-2 unit unit-xs-hidden unit-s-hidden unit-m-hidden l-1-3 xl-1-3">
+        <script type="application/json" data-pattern="cards/single-card-dark">
+          {
+            "use[xlink:href]": "../images/icons.svg#moon",
+            "h4": "The Moon",
+            "p": "",
+            ".btn": "$1560"
+          }
+        </script>
+      </div>
+      <div class="pad-t-2 text-center pad-b-2 gutter-2 unit xs-1 s-1 m-1 l-1 xl-1">
+        <a class="btn btn-big" href="products.html">Flights</a>
+      </div>
     </div>
-    <div class="pad-t gutter-2 unit xs-1 s-1 m-1-2 l-1-3 xl-1-3">
-      <script type="application/json" data-pattern="cards/single-card-dark">
-        {
-          "use[xlink:href]": "../images/icons.svg#jupiter",
-          "h4": "Jupiter",
-          "p": "",
-          ".btn": "$8487"
-        }
-      </script>
+    <div class="grid dark-background">
+      <div class="gutter-2 unit xs-1 s-1 m-1 l-1-3 xl-1-3">
+        <script type="application/json" data-pattern="sections/card-no-button-white">
+          {
+            "use[xlink:href]": "../images/icons.svg#boarding",
+            "h4": "Boarding",
+            "p": "Find your room, take a seat and buckle up for take off!"
+          }
+        </script>
+      </div>
+      <div class="gutter-2 unit xs-1 s-1 m-1 l-1-3 xl-1-3">
+        <script type="application/json" data-pattern="sections/card-no-button-white">
+          {
+            "use[xlink:href]": "../images/icons.svg#take-off",
+            "h4": "Take Off",
+            "p": "Thanks to technology, it will feel just like an airplane taking flight."
+          }
+        </script>
+      </div>
+      <div class="gutter-2 unit xs-1 s-1 m-1 l-1-3 xl-1-3">
+        <script type="application/json" data-pattern="sections/card-no-button-white">
+          {
+            "use[xlink:href]": "../images/icons.svg#flying",
+            "h4": "Flying",
+            "p": "Once the seatbelt symbols are green, feel free to explore!"
+          }
+        </script>
+      </div>
     </div>
-    <div class="pad-t gutter-2 unit unit-xs-hidden unit-s-hidden unit-m-hidden l-1-3 xl-1-3">
-      <script type="application/json" data-pattern="cards/single-card-dark">
-        {
-          "use[xlink:href]": "../images/icons.svg#moon",
-          "h4": "The Moon",
-          "p": "",
-          ".btn": "$1560"
-        }
-      </script>
-    </div>
-    <div class="pad-t-2 text-center pad-b-2 gutter-2 unit xs-1 s-1 m-1 l-1 xl-1">
-      <a class="btn btn-big" href="products.html">Flights</a>
-    </div>
-  </div>
-  <div class="grid dark-background">
-    <div class="gutter-2 unit xs-1 s-1 m-1 l-1-3 xl-1-3">
-      <script type="application/json" data-pattern="sections/card-no-button-white">
-        {
-          "use[xlink:href]": "../images/icons.svg#boarding",
-          "h4": "Boarding",
-          "p": "Find your room, take a seat and buckle up for take off!"
-        }
-      </script>
-    </div>
-    <div class="gutter-2 unit xs-1 s-1 m-1 l-1-3 xl-1-3">
-      <script type="application/json" data-pattern="sections/card-no-button-white">
-        {
-          "use[xlink:href]": "../images/icons.svg#take-off",
-          "h4": "Take Off",
-          "p": "Thanks to technology, it will feel just like an airplane taking flight."
-        }
-      </script>
-    </div>
-    <div class="gutter-2 unit xs-1 s-1 m-1 l-1-3 xl-1-3">
-      <script type="application/json" data-pattern="sections/card-no-button-white">
-        {
-          "use[xlink:href]": "../images/icons.svg#flying",
-          "h4": "Flying",
-          "p": "Once the seatbelt symbols are green, feel free to explore!"
-        }
-      </script>
-    </div>
-  </div>
-  <script type="application/json" data-pattern="sections/text-light">
-    {
-      "h2": "More Options?",
-      "p": "Find your perfect space cruise vacation by browsing all the flights we have to offer. Also, check out our luxury rooms offered on these spacecrafts!",
-      ".btn": "Explore"
-    }
-  </script>
+    <script type="application/json" data-pattern="sections/text-light">
+      {
+        "h2": "More Options?",
+        "p": "Find your perfect space cruise vacation by browsing all the flights we have to offer. Also, check out our luxury rooms offered on these spacecrafts!",
+        ".btn": "Explore"
+      }
+    </script>
+  </main>
   <script type="application/json" data-pattern="footers/footer"></script>
 </body>
 </html>
