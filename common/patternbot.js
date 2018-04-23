@@ -444,9 +444,9 @@ const patternBotIncludes = function (manifest) {
 /** 
  * Patternbot library manifest
  * /Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library
- * @version 570724ab7ed43e732877e269f56cf8a686e09106
+ * @version 9c0b1be94499a6420aee231ab123e19173dea31a
  */
-const patternManifest_570724ab7ed43e732877e269f56cf8a686e09106 = {
+const patternManifest_9c0b1be94499a6420aee231ab123e19173dea31a = {
   "commonInfo": {
     "modulifier": [
       "responsive",
@@ -666,11 +666,14 @@ const patternManifest_570724ab7ed43e732877e269f56cf8a686e09106 = {
       "icons": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/images/icons.svg"
     },
     "logos": {
-      "sizeLarge": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/images/logo.svg",
-      "size64": false,
-      "size32": false,
-      "size16": false,
-      "sizeLargeLocal": "logo.svg"
+      "sizeLarge": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/images/logo-256.svg",
+      "size64": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/images/logo-64.svg",
+      "size32": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/images/logo-32.svg",
+      "size16": "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/images/logo-16.svg",
+      "size16Local": "logo-16.svg",
+      "sizeLargeLocal": "logo-256.svg",
+      "size32Local": "logo-32.svg",
+      "size64Local": "logo-64.svg"
     },
     "patterns": [
       "/Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library/patterns/banner",
@@ -1219,5 +1222,5 @@ const patternManifest_570724ab7ed43e732877e269f56cf8a686e09106 = {
   }
 };
 
-patternBotIncludes(patternManifest_570724ab7ed43e732877e269f56cf8a686e09106);
+patternBotIncludes(patternManifest_9c0b1be94499a6420aee231ab123e19173dea31a);
 }());
