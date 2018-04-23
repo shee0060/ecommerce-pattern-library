@@ -1,8 +1,10 @@
 .dark {
   color: #fff;
+  padding: none;
 }
 
 .light {
+  padding: none;
   color: var(--color-primary);
 }
 

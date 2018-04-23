@@ -3,12 +3,12 @@
   color: #fff;
 }
 
-.dark {
+.dark-text-section {
   padding-top: 4em;
   color: #fff;
 }
 
-.light {
+.light-text-section {
   padding-top: 4em;
   color: var(--color-primary);
 }
