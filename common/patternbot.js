@@ -444,9 +444,9 @@ const patternBotIncludes = function (manifest) {
 /** 
  * Patternbot library manifest
  * /Users/Tori/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Semester 4/Web Dev IV/ecommerce-pattern-library
- * @version 4dbc66d66dc11df6cc0534c8be30bfca6e532333
+ * @version a2e69777dfe378d027d5fd696ea0a80dfefbe2af
  */
-const patternManifest_4dbc66d66dc11df6cc0534c8be30bfca6e532333 = {
+const patternManifest_a2e69777dfe378d027d5fd696ea0a80dfefbe2af = {
   "commonInfo": {
     "modulifier": [
       "responsive",
@@ -623,22 +623,25 @@ const patternManifest_4dbc66d66dc11df6cc0534c8be30bfca6e532333 = {
     "icons": [
       "boarding",
       "email-dark",
+      "facebook-dark",
       "error",
       "email-light",
-      "facebook-dark",
       "facebook-light",
-      "flying",
-      "instagram-dark",
-      "instagram-light",
+      "jupiter-mars",
+      "jupiter-saturn",
       "jupiter",
       "mars",
       "moon",
+      "neptune-uranus",
+      "instagram-light",
+      "flying",
       "nav",
-      "surfing",
-      "take-off",
-      "twitter-light",
+      "neptune",
+      "instagram-dark",
       "twitter-dark",
-      "orbiting"
+      "twitter-light",
+      "venus-mercury",
+      "take-off"
     ],
     "interfaceColours": {
       "primary": 0,
@@ -1204,5 +1207,5 @@ const patternManifest_4dbc66d66dc11df6cc0534c8be30bfca6e532333 = {
   }
 };
 
-patternBotIncludes(patternManifest_4dbc66d66dc11df6cc0534c8be30bfca6e532333);
+patternBotIncludes(patternManifest_a2e69777dfe378d027d5fd696ea0a80dfefbe2af);
 }());
