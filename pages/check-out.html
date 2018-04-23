@@ -8,8 +8,22 @@
 </head>
 <body>
   <script type="application/json" data-pattern="headers/header"></script>
-  <script type="application/json" data-pattern="banner/hero-banner-light"></script>
-  <script type="application/json" data-pattern="sections/card-white"></script>
+  <script type="application/json" data-pattern="banner/hero-banner-light">
+    {
+      "use[xlink:href]": "../images/comet-surfing.svg",
+      "h1": "Join us on our next flight!",
+      "p": "Orion Exploration has over 50 flights leaving every week. Book one today for the adventure of a lifetime."
+    }
+  </script>
+  <div class="gutter-2 pad-t-2">
+    <script type="application/json" data-pattern="cards/no-button-dark">
+      {
+        "use[xlink:href]": "../images/icons.svg#mars",
+        "h4": "Mars",
+        "p": "2 month round trip vacation to Mars and back to Earth. Total: $4980",
+      }
+    </script>
+  </div>
   <script type="application/json" data-pattern="sections/form-section"></script>
   <script type="application/json" data-pattern="footers/footer"></script>
 </body>
