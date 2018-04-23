@@ -31,3 +31,8 @@ mark {
 .dark-background {
   background-color: var(--color-primary);
 }
+
+a:focus,
+button:focus {
+  outline: 3px solid var(--color-accent-light);
+}

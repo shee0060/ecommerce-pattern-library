@@ -4,41 +4,120 @@
   <meta charset="utf-8">
   <title>Destinations</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="favicon.ico" rel="shortcut icon">
+  <link rel="apple-touch-icon" href="favicon-32.png">
   <script src="../common/patternbot.js"></script>
 </head>
 <body>
+  <ul class="skip-links">
+    <li><a href="#main">Jump to main content</a></li>
+    <li><a href="#nav">Jump to navigation</a></li>
+  </ul>
+
   <script type="application/json" data-pattern="headers/header"></script>
-  <script type="application/json" data-pattern="banner/hero-banner-light"></script>
+  <script type="application/json" data-pattern="banner/hero-banner-light">
+    {
+      "use[xlink:href]": "../images/comet-surfing.svg",
+      "h1": "Comet Surfing",
+      "p": "Go surfing on the tails of comets flying around our solar system!"
+    }
+  </script>
   <script type="application/json" data-pattern="sections/space"></script>
-  <div class="grid">
-    <div class="gutter-2 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-      <script type="application/json" data-pattern="sections/card-dark"></script>
+  <main role="main" id="main" tabindex="0">
+    <h2 class="pad-t tera text-center">Single Destinations</h2>
+    <div class="grid pad-b-2 ">
+      <div class="pad-t gutter-2 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
+        <script type="application/json" data-pattern="cards/single-card-dark">
+          {
+            "use[xlink:href]": "../images/icons.svg#mars",
+            "h4": "Mars",
+            "p": "",
+            ".btn": "$4980"
+          }
+        </script>
+      </div>
+      <div class="pad-t gutter-2 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
+        <script type="application/json" data-pattern="cards/single-card-dark">
+          {
+            "use[xlink:href]": "../images/icons.svg#neptune",
+            "h4": "Neptune",
+            "p": "",
+            ".btn": "$15380"
+          }
+        </script>
+      </div>
+      <div class="pad-t-2 gutter-2 unit unit-xs-hidden unit-s-hidden unit-m-hidden l-1-2 xl-1-2">
+        <script type="application/json" data-pattern="cards/single-card-dark">
+          {
+            "use[xlink:href]": "../images/icons.svg#moon",
+            "h4": "The Moon",
+            "p": "",
+            ".btn": "$1560"
+          }
+        </script>
+      </div>
+      <div class="pad-t-2 gutter-2 unit unit-xs-hidden unit-s-hidden unit-m-hidden l-1-2 xl-1-2">
+        <script type="application/json" data-pattern="cards/single-card-dark">
+          {
+            "use[xlink:href]": "../images/icons.svg#jupiter",
+            "h4": "Jupiter",
+            "p": "",
+            ".btn": "$8487"
+          }
+        </script>
+      </div>
     </div>
-    <div class="gutter-2 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-      <script type="application/json" data-pattern="sections/card-dark"></script>
+    <script type="application/json" data-pattern="sections/text-dark">
+      {
+        "h2": "Rooms with views",
+        "p": "Luxury rooms are available on all of our spacecraft. Get a room with a window to watch the wonders of space fly by your eyes! ",
+        ".btn": "Explore"
+      }
+    </script>
+    <h2 class="pad-t tera text-center">Multiple Destinations</h2>
+    <div class="pad-t-2 pad-b-2 grid">
+      <div class="pad-t gutter-2 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
+        <script type="application/json" data-pattern="cards/single-card-dark">
+          {
+            "use[xlink:href]": "../images/icons.svg#venus-mercury",
+            "h4": "Venus and Mercury",
+            "p": "",
+            ".btn": "$11304"
+          }
+        </script>
+      </div>
+      <div class="pad-t gutter-2 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
+        <script type="application/json" data-pattern="cards/single-card-dark">
+          {
+            "use[xlink:href]": "../images/icons.svg#neptune-uranus",
+            "h4": "Neptune and Uranus",
+            "p": "",
+            ".btn": "$22587"
+          }
+        </script>
+      </div>
+      <div class="pad-t-2 gutter-2 unit unit-xs-hidden unit-s-hidden unit-m-hidden l-1-2 xl-1-2">
+        <script type="application/json" data-pattern="cards/single-card-dark">
+          {
+            "use[xlink:href]": "../images/icons.svg#jupiter-saturn",
+            "h4": "Jupiter and Saturn",
+            "p": "",
+            ".btn": "$21887"
+          }
+        </script>
+      </div>
+      <div class="pad-t-2 gutter-2 unit unit-xs-hidden unit-s-hidden unit-m-hidden l-1-2 xl-1-2">
+        <script type="application/json" data-pattern="cards/single-card-dark">
+          {
+            "use[xlink:href]": "../images/icons.svg#jupiter-mars",
+            "h4": "Jupiter and Mars",
+            "p": "",
+            ".btn": "$8687"
+          }
+        </script>
+      </div>
     </div>
-    <div class="gutter-2 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-      <script type="application/json" data-pattern="sections/card-dark"></script>
-    </div>
-    <div class="gutter-2 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-      <script type="application/json" data-pattern="sections/card-dark"></script>
-    </div>
-  </div>
-  <script type="application/json" data-pattern="sections/text-dark"></script>
-  <div class="grid">
-    <div class="gutter-2 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-      <script type="application/json" data-pattern="sections/card-dark"></script>
-    </div>
-    <div class="gutter-2 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-      <script type="application/json" data-pattern="sections/card-dark"></script>
-    </div>
-    <div class="gutter-2 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-      <script type="application/json" data-pattern="sections/card-dark"></script>
-    </div>
-    <div class="gutter-2 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-      <script type="application/json" data-pattern="sections/card-dark"></script>
-    </div>
-  </div>
+  </main>
   <script type="application/json" data-pattern="footers/footer"></script>
 </body>
 </html>

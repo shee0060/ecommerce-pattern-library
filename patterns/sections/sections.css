@@ -3,13 +3,13 @@
   color: #fff;
 }
 
-.dark {
-  padding-top: 4em;
+.dark-text-section {
+  padding-top: 3em;
   color: #fff;
 }
 
-.light {
-  padding-top: 4em;
+.light-text-section {
+  padding-top: 3em;
   color: var(--color-primary);
 }
 
